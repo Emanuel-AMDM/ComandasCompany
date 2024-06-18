@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-06-18T18:57:02.082Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0" etag="xg8wB5OHIcgfCyCuISGw" version="24.4.9" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-18T20:53:34.206Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0" etag="cdSmFWCmm4dHbKHuQ7mY" version="24.4.9" type="github">
   <diagram name="Página-1" id="xbZieVm0xrTmN9SILhUu">
-    <mxGraphModel dx="7577" dy="3057" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3192" dy="1338" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -11,19 +11,19 @@
           <mxGeometry x="-160" y="-120" width="960" height="80" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-4" value="55" style="rounded=0;whiteSpace=wrap;html=1;align=center;fontSize=35;" vertex="1" parent="1">
-          <mxGeometry x="-120" y="80" width="160" height="120" as="geometry" />
+          <mxGeometry x="-120" y="160" width="160" height="120" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-20" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="-40" y="163" width="30" height="30" as="geometry" />
+          <mxGeometry x="-40" y="243" width="30" height="30" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-21" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry y="163" width="30" height="30" as="geometry" />
+          <mxGeometry y="243" width="30" height="30" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-50" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.concepts.writing_pen;" vertex="1" parent="1">
-          <mxGeometry x="-35" y="168" width="20" height="20" as="geometry" />
+          <mxGeometry x="-35" y="248" width="20" height="20" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-51" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/unicons-line-vol-6/24/trash-alt-128.png" vertex="1" parent="1">
-          <mxGeometry x="5" y="168" width="20" height="20" as="geometry" />
+          <mxGeometry x="5" y="248" width="20" height="20" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-86" value="Comandas" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=35;" vertex="1" parent="1">
           <mxGeometry x="-120" y="8" width="160" height="30" as="geometry" />
@@ -41,181 +41,169 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-172" value="55" style="rounded=0;whiteSpace=wrap;html=1;align=center;fontSize=35;" vertex="1" parent="1">
-          <mxGeometry x="120" y="80" width="160" height="120" as="geometry" />
+          <mxGeometry x="120" y="160" width="160" height="120" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-173" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="200" y="163" width="30" height="30" as="geometry" />
+          <mxGeometry x="200" y="243" width="30" height="30" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-174" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="240" y="163" width="30" height="30" as="geometry" />
+          <mxGeometry x="240" y="243" width="30" height="30" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-175" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.concepts.writing_pen;" vertex="1" parent="1">
-          <mxGeometry x="205" y="168" width="20" height="20" as="geometry" />
+          <mxGeometry x="205" y="248" width="20" height="20" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-176" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/unicons-line-vol-6/24/trash-alt-128.png" vertex="1" parent="1">
-          <mxGeometry x="245" y="168" width="20" height="20" as="geometry" />
+          <mxGeometry x="245" y="248" width="20" height="20" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-177" value="55" style="rounded=0;whiteSpace=wrap;html=1;align=center;fontSize=35;" vertex="1" parent="1">
-          <mxGeometry x="360" y="80" width="160" height="120" as="geometry" />
+          <mxGeometry x="360" y="160" width="160" height="120" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-178" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="440" y="163" width="30" height="30" as="geometry" />
+          <mxGeometry x="440" y="243" width="30" height="30" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-179" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="480" y="163" width="30" height="30" as="geometry" />
+          <mxGeometry x="480" y="243" width="30" height="30" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-180" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.concepts.writing_pen;" vertex="1" parent="1">
-          <mxGeometry x="445" y="168" width="20" height="20" as="geometry" />
+          <mxGeometry x="445" y="248" width="20" height="20" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-181" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/unicons-line-vol-6/24/trash-alt-128.png" vertex="1" parent="1">
-          <mxGeometry x="485" y="168" width="20" height="20" as="geometry" />
+          <mxGeometry x="485" y="248" width="20" height="20" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-182" value="55" style="rounded=0;whiteSpace=wrap;html=1;align=center;fontSize=35;" vertex="1" parent="1">
-          <mxGeometry x="600" y="80" width="160" height="120" as="geometry" />
+          <mxGeometry x="600" y="160" width="160" height="120" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-183" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="680" y="163" width="30" height="30" as="geometry" />
+          <mxGeometry x="680" y="243" width="30" height="30" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-184" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="720" y="163" width="30" height="30" as="geometry" />
+          <mxGeometry x="720" y="243" width="30" height="30" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-185" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.concepts.writing_pen;" vertex="1" parent="1">
-          <mxGeometry x="685" y="168" width="20" height="20" as="geometry" />
+          <mxGeometry x="685" y="248" width="20" height="20" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-186" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/unicons-line-vol-6/24/trash-alt-128.png" vertex="1" parent="1">
-          <mxGeometry x="725" y="168" width="20" height="20" as="geometry" />
+          <mxGeometry x="725" y="248" width="20" height="20" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-187" value="55" style="rounded=0;whiteSpace=wrap;html=1;align=center;fontSize=35;" vertex="1" parent="1">
-          <mxGeometry x="-120" y="240" width="160" height="120" as="geometry" />
+          <mxGeometry x="-120" y="320" width="160" height="120" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-188" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="-40" y="323" width="30" height="30" as="geometry" />
+          <mxGeometry x="-40" y="403" width="30" height="30" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-189" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry y="323" width="30" height="30" as="geometry" />
+          <mxGeometry y="403" width="30" height="30" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-190" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.concepts.writing_pen;" vertex="1" parent="1">
-          <mxGeometry x="-35" y="328" width="20" height="20" as="geometry" />
+          <mxGeometry x="-35" y="408" width="20" height="20" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-191" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/unicons-line-vol-6/24/trash-alt-128.png" vertex="1" parent="1">
-          <mxGeometry x="5" y="328" width="20" height="20" as="geometry" />
+          <mxGeometry x="5" y="408" width="20" height="20" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-192" value="55" style="rounded=0;whiteSpace=wrap;html=1;align=center;fontSize=35;" vertex="1" parent="1">
-          <mxGeometry x="120" y="240" width="160" height="120" as="geometry" />
+          <mxGeometry x="120" y="320" width="160" height="120" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-193" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="200" y="323" width="30" height="30" as="geometry" />
+          <mxGeometry x="200" y="403" width="30" height="30" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-194" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="240" y="323" width="30" height="30" as="geometry" />
+          <mxGeometry x="240" y="403" width="30" height="30" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-195" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.concepts.writing_pen;" vertex="1" parent="1">
-          <mxGeometry x="205" y="328" width="20" height="20" as="geometry" />
+          <mxGeometry x="205" y="408" width="20" height="20" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-196" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/unicons-line-vol-6/24/trash-alt-128.png" vertex="1" parent="1">
-          <mxGeometry x="245" y="328" width="20" height="20" as="geometry" />
+          <mxGeometry x="245" y="408" width="20" height="20" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-197" value="55" style="rounded=0;whiteSpace=wrap;html=1;align=center;fontSize=35;" vertex="1" parent="1">
-          <mxGeometry x="360" y="240" width="160" height="120" as="geometry" />
+          <mxGeometry x="360" y="320" width="160" height="120" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-198" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="440" y="323" width="30" height="30" as="geometry" />
+          <mxGeometry x="440" y="403" width="30" height="30" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-199" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="480" y="323" width="30" height="30" as="geometry" />
+          <mxGeometry x="480" y="403" width="30" height="30" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-200" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.concepts.writing_pen;" vertex="1" parent="1">
-          <mxGeometry x="445" y="328" width="20" height="20" as="geometry" />
+          <mxGeometry x="445" y="408" width="20" height="20" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-201" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/unicons-line-vol-6/24/trash-alt-128.png" vertex="1" parent="1">
-          <mxGeometry x="485" y="328" width="20" height="20" as="geometry" />
+          <mxGeometry x="485" y="408" width="20" height="20" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-202" value="55" style="rounded=0;whiteSpace=wrap;html=1;align=center;fontSize=35;" vertex="1" parent="1">
-          <mxGeometry x="600" y="240" width="160" height="120" as="geometry" />
+          <mxGeometry x="600" y="320" width="160" height="120" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-203" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="680" y="323" width="30" height="30" as="geometry" />
+          <mxGeometry x="680" y="403" width="30" height="30" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-204" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="720" y="323" width="30" height="30" as="geometry" />
+          <mxGeometry x="720" y="403" width="30" height="30" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-205" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.concepts.writing_pen;" vertex="1" parent="1">
-          <mxGeometry x="685" y="328" width="20" height="20" as="geometry" />
+          <mxGeometry x="685" y="408" width="20" height="20" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-206" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/unicons-line-vol-6/24/trash-alt-128.png" vertex="1" parent="1">
-          <mxGeometry x="725" y="328" width="20" height="20" as="geometry" />
+          <mxGeometry x="725" y="408" width="20" height="20" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-207" value="55" style="rounded=0;whiteSpace=wrap;html=1;align=center;fontSize=35;" vertex="1" parent="1">
-          <mxGeometry x="-120" y="400" width="160" height="120" as="geometry" />
+          <mxGeometry x="-120" y="480" width="160" height="120" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-208" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="-40" y="483" width="30" height="30" as="geometry" />
+          <mxGeometry x="-40" y="563" width="30" height="30" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-209" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry y="483" width="30" height="30" as="geometry" />
+          <mxGeometry y="563" width="30" height="30" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-210" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.concepts.writing_pen;" vertex="1" parent="1">
-          <mxGeometry x="-35" y="488" width="20" height="20" as="geometry" />
+          <mxGeometry x="-35" y="568" width="20" height="20" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-211" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/unicons-line-vol-6/24/trash-alt-128.png" vertex="1" parent="1">
-          <mxGeometry x="5" y="488" width="20" height="20" as="geometry" />
+          <mxGeometry x="5" y="568" width="20" height="20" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-212" value="55" style="rounded=0;whiteSpace=wrap;html=1;align=center;fontSize=35;" vertex="1" parent="1">
-          <mxGeometry x="120" y="400" width="160" height="120" as="geometry" />
+          <mxGeometry x="120" y="480" width="160" height="120" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-213" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="200" y="483" width="30" height="30" as="geometry" />
+          <mxGeometry x="200" y="563" width="30" height="30" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-214" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="240" y="483" width="30" height="30" as="geometry" />
+          <mxGeometry x="240" y="563" width="30" height="30" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-215" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.concepts.writing_pen;" vertex="1" parent="1">
-          <mxGeometry x="205" y="488" width="20" height="20" as="geometry" />
+          <mxGeometry x="205" y="568" width="20" height="20" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-216" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/unicons-line-vol-6/24/trash-alt-128.png" vertex="1" parent="1">
-          <mxGeometry x="245" y="488" width="20" height="20" as="geometry" />
+          <mxGeometry x="245" y="568" width="20" height="20" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-217" value="55" style="rounded=0;whiteSpace=wrap;html=1;align=center;fontSize=35;" vertex="1" parent="1">
-          <mxGeometry x="360" y="400" width="160" height="120" as="geometry" />
+          <mxGeometry x="360" y="480" width="160" height="120" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-218" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="440" y="483" width="30" height="30" as="geometry" />
+          <mxGeometry x="440" y="563" width="30" height="30" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-219" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="480" y="483" width="30" height="30" as="geometry" />
+          <mxGeometry x="480" y="563" width="30" height="30" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-220" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.concepts.writing_pen;" vertex="1" parent="1">
-          <mxGeometry x="445" y="488" width="20" height="20" as="geometry" />
+          <mxGeometry x="445" y="568" width="20" height="20" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-221" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/unicons-line-vol-6/24/trash-alt-128.png" vertex="1" parent="1">
-          <mxGeometry x="485" y="488" width="20" height="20" as="geometry" />
+          <mxGeometry x="485" y="568" width="20" height="20" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-222" value="55" style="rounded=0;whiteSpace=wrap;html=1;align=center;fontSize=35;" vertex="1" parent="1">
-          <mxGeometry x="600" y="400" width="160" height="120" as="geometry" />
+          <mxGeometry x="600" y="480" width="160" height="120" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-223" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="680" y="483" width="30" height="30" as="geometry" />
+          <mxGeometry x="680" y="563" width="30" height="30" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-224" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="720" y="483" width="30" height="30" as="geometry" />
+          <mxGeometry x="720" y="563" width="30" height="30" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-225" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.concepts.writing_pen;" vertex="1" parent="1">
-          <mxGeometry x="685" y="488" width="20" height="20" as="geometry" />
+          <mxGeometry x="685" y="568" width="20" height="20" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-226" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/unicons-line-vol-6/24/trash-alt-128.png" vertex="1" parent="1">
-          <mxGeometry x="725" y="488" width="20" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="uYwmo2Z151eSSHUktlcx-227" value="55" style="rounded=0;whiteSpace=wrap;html=1;align=center;fontSize=35;" vertex="1" parent="1">
-          <mxGeometry x="-120" y="560" width="160" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="uYwmo2Z151eSSHUktlcx-232" value="55" style="rounded=0;whiteSpace=wrap;html=1;align=center;fontSize=35;" vertex="1" parent="1">
-          <mxGeometry x="120" y="560" width="160" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="uYwmo2Z151eSSHUktlcx-233" value="55" style="rounded=0;whiteSpace=wrap;html=1;align=center;fontSize=35;" vertex="1" parent="1">
-          <mxGeometry x="360" y="560" width="160" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="uYwmo2Z151eSSHUktlcx-234" value="55" style="rounded=0;whiteSpace=wrap;html=1;align=center;fontSize=35;" vertex="1" parent="1">
-          <mxGeometry x="600" y="560" width="160" height="80" as="geometry" />
+          <mxGeometry x="725" y="568" width="20" height="20" as="geometry" />
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-235" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;" vertex="1" parent="1">
           <mxGeometry x="-400.77" y="680" width="240" height="760" as="geometry" />
@@ -393,6 +381,9 @@
         </mxCell>
         <mxCell id="uYwmo2Z151eSSHUktlcx-391" value="Readonly input here..." style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;strokeColor=#CED4DA;strokeWidth=1;fillColor=#E9ECEF;fontColor=#505050;whiteSpace=wrap;align=left;verticalAlign=middle;spacingLeft=10;fontSize=14;" vertex="1" parent="1">
           <mxGeometry x="-120" y="1720" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="uYwmo2Z151eSSHUktlcx-392" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;Abrir Comanda&lt;/font&gt;" style="rounded=1;html=1;shadow=0;dashed=0;whiteSpace=wrap;fontSize=10;fillColor=#666666;align=center;strokeColor=#4D4D4D;fontColor=#ffffff;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="-120" y="80" width="160" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
