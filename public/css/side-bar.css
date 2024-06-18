@@ -1,0 +1,40 @@
+@import url('../css/themes/body.css');
+
+.side-bar-menu{
+    width: 15%;
+    background-color: #bacadb;
+    box-shadow: 1px 1px 1px 0px black;
+
+    img{
+        width: 282px;
+    }
+
+    .user{
+        padding: 20px 25px;
+        
+        span{
+            padding: 0px 10px;
+        }
+    }
+
+    .buttons-menu{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+
+        a{
+            text-decoration: none;
+            padding: 15px 40px;
+            color: black;
+        }
+
+        a:hover{
+            background-color: rgb(102, 142, 252);
+        }
+
+        a i{
+            padding-right: 10px;
+            color: black;
+        }
+    }
+}

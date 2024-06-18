@@ -1,0 +1,23 @@
+{
+  "name": "php/boilerplate",
+  "description": "Template de projeto em PHP",
+  "type": "project",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Php\\Boilerplate\\": "src/"
+    },
+    "files": [
+      "src/helpers/view.php",
+      "src/helpers/url.php"
+    ]
+  },
+  "authors": [
+    {
+      "name": "Gustavo Vilas Boas"
+    }
+  ],
+  "require": {
+    "bramus/router": "^1.6"
+  }
+}
