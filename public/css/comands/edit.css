@@ -1,0 +1,12 @@
+@import url('../themes/select.css');
+@import url('../themes/buttons.css');
+@import url('../themes/table.css');
+
+.contents{
+    padding: 30px 70px;
+
+    .contents-edit{
+        padding: 30px 0px;
+        display: flex;
+    }
+}

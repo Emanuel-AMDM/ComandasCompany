@@ -1,0 +1,46 @@
+@import url('../themes/buttons.css');
+
+.contents{
+    padding: 30px 70px;
+
+    .comands{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+
+        .border{
+            padding: 50px 150px;
+            border: 5px solid rgb(241, 46, 46);
+
+            a{
+                text-decoration: none;
+                color: black;
+            }
+
+            a h2{
+                transform: scale(3, 3);
+            }
+
+            .icons{
+                display: flex;
+                position: relative;
+
+                .border-boll-pen{
+                    border: 1px solid black;
+                    padding: 5px;
+                    border-radius: 50px;
+                    position: absolute;
+                    left: 350%;
+                }
+                
+                .border-boll-trash{
+                    border: 1px solid black;
+                    padding: 5px;
+                    border-radius: 50px;
+                    position: absolute;
+                    left: 490%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,72 @@
+.button-create{
+    padding: 30px 0px;
+    a{
+        color: black;
+        background-color: #bacadb;
+        text-decoration: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+    }
+}
+
+.button-ask{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0px 30px;
+
+    button{
+        height: 35px;
+        width: 100px;
+        border-radius: 5px;
+    }
+}
+
+.button-close{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    button{
+        height: 35px;
+        width: 100px;
+        border-radius: 5px;
+    }
+}
+
+.button-pay{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    button{
+        height: 35px;
+        width: 100px;
+        border-radius: 5px;
+    }
+}
+
+.button-save{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 500px;
+
+    button{
+        height: 35px;
+        width: 100px;
+        border-radius: 5px;
+    }
+}
+
+.button-save-registration{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 0px 30px;
+
+    button{
+        height: 35px;
+        width: 100px;
+        border-radius: 5px;
+    }
+}

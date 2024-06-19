@@ -1,0 +1,13 @@
+.input-text{
+    display: flex;
+    flex-direction: column;
+
+    input{
+        height: 35px;
+        width: 150px;
+        margin-top: 5px;
+        font-size: 15px;
+        border-radius: 5px;
+        box-shadow: inset 0px 0px 3px rgba(0,0,0,0.9);
+    }
+}

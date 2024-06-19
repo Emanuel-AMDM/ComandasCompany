@@ -1,0 +1,13 @@
+@import url('../themes/buttons.css');
+@import url('../themes/select.css');
+@import url('../themes/input.css');
+
+.contents{
+    padding: 30px 70px;
+
+    .contents-products{
+        margin-top: 25px;
+        display: flex;
+        gap: 30px;
+    }
+}

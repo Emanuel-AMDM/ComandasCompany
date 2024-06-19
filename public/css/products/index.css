@@ -1,0 +1,6 @@
+@import url('../themes/table.css');
+@import url('../themes/buttons.css');
+
+.contents{
+    padding: 30px 70px;
+}

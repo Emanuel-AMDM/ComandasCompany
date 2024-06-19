@@ -1,0 +1,19 @@
+@import url('../themes/buttons.css');
+@import url('../themes/input.css');
+
+.contents{
+    padding: 30px 70px;
+
+    .contents-pre-registration{
+        display: flex;
+        flex-direction: row;
+        
+        label{
+            margin-top: 30px;
+        }
+    
+        input{
+            width: 450px;
+        }
+    }
+}
