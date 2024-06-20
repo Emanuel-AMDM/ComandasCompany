@@ -15,9 +15,9 @@
     <hr>
 
     <div class="buttons-menu">
-        <a href="<?= url('comandas') ?>"><i class="fa-solid fa-clipboard"></i><strong>Comandas</strong></a>
-        <a href="link1.htm"><i class="fa-brands fa-product-hunt"></i><strong>Produtos</strong></a>
-        <a href="link1.htm"><i class="fa-solid fa-table-list"></i><strong>Pré-Cadastros</strong></a>
+        <a href="<?= url('/comandas') ?>"><i class="fa-solid fa-clipboard"></i><strong>Comandas</strong></a>
+        <a href="<?= url('/produtos') ?>"><i class="fa-brands fa-product-hunt"></i><strong>Produtos</strong></a>
+        <a href="<?= url('/pre-cadastro') ?>"><i class="fa-solid fa-table-list"></i><strong>Pré-Cadastros</strong></a>
     </div>
 
     <script src="https://kit.fontawesome.com/5dc8345cee.js" crossorigin="anonymous"></script>
