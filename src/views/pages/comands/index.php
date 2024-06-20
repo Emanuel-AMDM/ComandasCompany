@@ -20,7 +20,7 @@
                     
                     <div class="icons">
                         <div class="border-boll-trash">
-                            <a href=""><i class="fa-solid fa-trash"></i></a>
+                            <a href=""><i class="fa-solid fa-trash" style="color:red;"></i></a>
                         </div>
                     </div>
                 </div>
@@ -30,7 +30,7 @@
                     
                     <div class="icons">
                         <div class="border-boll-trash">
-                            <a href=""><i class="fa-solid fa-trash"></i></a>
+                            <a href=""><i class="fa-solid fa-trash" style="color:red;"></i></a>
                         </div>
                     </div>
                 </div>
@@ -40,7 +40,7 @@
                     
                     <div class="icons">
                         <div class="border-boll-trash">
-                            <a href=""><i class="fa-solid fa-trash"></i></a>
+                            <a href=""><i class="fa-solid fa-trash" style="color:red;"></i></a>
                         </div>
                     </div>
                 </div>
