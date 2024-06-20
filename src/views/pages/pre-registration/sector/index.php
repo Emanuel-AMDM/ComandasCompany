@@ -10,7 +10,7 @@
             <h1>Setor</h1>
 
             <div class="button-create">
-                <a href="">Cadastrar</a>
+                <a href="<?= url('/pre-cadastro/setor/create') ?>"><strong>Cadastrar</strong></a>
             </div>
 
             <div class="table-products">
@@ -25,7 +25,7 @@
                         <tr>
                             <td>Cerveja</td>
                             <td>
-                                <a href=""><i class="fa-solid fa-pen" style="color:green;"></i></a>
+                                <a href="<?= url('/pre-cadastro/setor/edit') ?>"><i class="fa-solid fa-pen" style="color:green;"></i></a>
                                 <a href=""><i class="fa-solid fa-trash" style="color:red;"></i></a>
                             </td>
                         </tr>

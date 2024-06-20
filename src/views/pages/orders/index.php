@@ -10,13 +10,13 @@
             <h1>Comandas</h1>
 
             <div class="button-create">
-                <a href=""><strong>Criar Comanda</strong></a>
+                <a href="<?= url('/comandas/create') ?>"><strong>Criar Comanda</strong></a>
             </div>
 
-            <div class="comands">
+            <div class="orders">
                 <div class="border">
                     
-                    <a href=""><h2>55</h2></a>
+                    <a href="<?= url('/comandas/edit') ?>"><h2>55</h2></a>
                     
                     <div class="icons">
                         <div class="border-boll-trash">
@@ -26,7 +26,7 @@
                 </div>
                 <div class="border">
                     
-                    <a href=""><h2>55</h2></a>
+                    <a href="<?= url('/comandas/edit') ?>"><h2>55</h2></a>
                     
                     <div class="icons">
                         <div class="border-boll-trash">
@@ -36,7 +36,7 @@
                 </div>
                 <div class="border">
                     
-                    <a href=""><h2>55</h2></a>
+                    <a href="<?= url('/comandas/edit') ?>"><h2>55</h2></a>
                     
                     <div class="icons">
                         <div class="border-boll-trash">
@@ -46,7 +46,7 @@
                 </div>
                 <div class="border">
                     
-                    <a href=""><h2>55</h2></a>
+                    <a href="<?= url('/comandas/edit') ?>"><h2>55</h2></a>
                     
                     <div class="icons">
                         <div class="border-boll-trash">

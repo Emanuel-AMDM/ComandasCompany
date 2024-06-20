@@ -7,7 +7,7 @@
         <?= view('includes/nav-bar.php') ?>
         <div class="contents">
             
-            <h1>Cadastrar - Produto</h1>
+            <h1>Editar - Produto</h1>
 
             <div class="contents-products">
                 <div class="select">

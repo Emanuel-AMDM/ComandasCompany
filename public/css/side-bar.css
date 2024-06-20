@@ -24,7 +24,7 @@
 
         a{
             text-decoration: none;
-            padding: 15px 40px;
+            padding: 10px 40px;
             color: black;
         }
 
@@ -35,6 +35,22 @@
         a i{
             padding-right: 10px;
             color: black;
+        }
+
+        /*classe do botão collapse*/
+        a.active/*,button.active(caso queira colocar em outro elemento)*/{
+            background-color: rgb(102, 142, 252);
+        }
+
+        .contents{
+            display: none;
+
+            a{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                padding: 10px 0px;
+            }
         }
     }
 }
