@@ -7,46 +7,66 @@ $router = new \Bramus\Router\Router();
 
 // home
 $router->get('/', function () {
-    view('pages/home.php');
+    load_controller('home-controller');
+
+    home_controller();
 });
 
 // comands
 $router->get('/comandas', function () {
-    view('pages/comands/index.php');
+    load_controller('orders-controller');
+
+    orders_controller();
 });
 
 $router->get('/comandas/edit', function () {
-    view('pages/comands/edit.php');
+    load_controller('orders-controller');
+
+    orders_edit_controller();
 });
 
 $router->get('/comandas/bill', function () {
-    view('pages/comands/bill.php');
+    load_controller('orders-controller');
+
+    orders_bill_controller();
 });
 
 // products
 $router->get('/produtos', function () {
-    view('pages/products/index.php');
+    load_controller('products-controller');
+
+    products_controller();
 });
 
 $router->get('/produtos/create', function () {
-    view('pages/products/create.php');
+    load_controller('products-controller');
+
+    products_create_controller();
 });
 
 $router->get('/produtos/edit', function () {
-    view('pages/products/edit.php');
+    load_controller('products-controller');
+
+    products_edit_controller();
 });
 
-// pre-cadastro
-$router->get('/pre-cadastro', function () {
-    view('pages/pre-registration/index.php');
+// pre-cadastro - setor
+$router->get('/pre-cadastro/setor', function () {
+    load_controller('pre-registration-controller');
+
+    pre_registration_sector_controller();
 });
 
-$router->get('/pre-cadastro/create', function () {
-    view('pages/pre-registration/create.php');
+$router->get('/pre-cadastro/setor/create', function () {
+    load_controller('pre-registration-controller');
+
+    pre_registration_sector_create_controller();
 });
 
-$router->get('/pre-cadastro/edit', function () {
-    view('pages/pre-registration/edit.php');
+$router->get('/pre-cadastro/setor/edit', function () {
+    load_controller('pre-registration-controller');
+
+    pre_registration_sector_edit_controller();
 });
 
 $router->run();

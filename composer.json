@@ -8,6 +8,7 @@
       "Php\\Boilerplate\\": "src/"
     },
     "files": [
+      "src/helpers/controller.php",
       "src/helpers/view.php",
       "src/helpers/url.php"
     ]

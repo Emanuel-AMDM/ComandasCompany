@@ -1,6 +1,7 @@
 <?php
 
-function view($path)
+function view($path, $variables = [])
 {
+    extract($variables);
     require __DIR__ . '/../views/' . $path;
 }

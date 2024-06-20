@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="<?= public_url('/css/home.css') ?>">
-<link rel="stylesheet" href="<?= public_url('/css/comands/index.css') ?>">
+<link rel="stylesheet" href="<?= public_url('/css/orders/index.css') ?>">
 
 <div class="main"> 
     <?= view('includes/side-bar.php') ?>

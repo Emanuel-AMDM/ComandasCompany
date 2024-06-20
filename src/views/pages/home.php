@@ -5,7 +5,7 @@
     <div class="wrapper">
         <?= view('includes/nav-bar.php') ?>
         <div class="contents">
-            Bem-Vindo
+            Bem-Vindo: <?= $usuario ?>
         </div>
     </div>
 </div>
