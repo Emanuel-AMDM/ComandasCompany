@@ -10,7 +10,7 @@
             <h1>Produtos</h1>
 
             <div class="button-create">
-                <a href="">Cadastrar</a>
+                <a href=""><strong>Cadastrar</strong></a>
             </div>
 
             <div class="table-products">
