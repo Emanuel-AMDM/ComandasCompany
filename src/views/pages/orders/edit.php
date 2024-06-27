@@ -14,6 +14,10 @@
                     <label for=""><strong>Produto</strong></label>
                     <select name="" id=""></select>
                 </div>
+                <div class="input-number">
+                    <label for=""><strong>Quantidade</strong></label>
+                    <input type="number">
+                </div>
                 <div class="button-ask">
                     <button><strong>Pedir</strong></button>
                 </div>
