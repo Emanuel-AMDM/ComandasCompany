@@ -6,12 +6,20 @@ class Order{
 
     public $products = [];
 
-    public function __construct($order){//number
-        $this->id = $order;
+    public function __construct($id){//number
+        $this->id = $id;
     }
 
     public function add_product(/*Product*/ $product){
-        $this->product[] = $product;
+        $this->products[] = $product;
+    }
+
+    public function add_product_in_order(string $name,/*number*/ $order){
+        $order = $this->search_order($order);
+
+        $product = $this->search_product($name);
+
+        $order->add_product($name);
     }
 
 }
@@ -20,8 +28,11 @@ class Product{
 
     public $name; //string
 
-    public function __construct(string $product){
+    public $price; //float
+
+    public function __construct(string $product, float $price){
         $this->name = $product;
+        $this->price = $price;
     }
 
 }
@@ -68,14 +79,6 @@ class Bar{
             }
         }
         return null;
-    }
-
-    public function add_product_in_order(string $name,/*number*/ $order){
-        $order = $this->search_order($order);
-
-        $product = $this->search_product($name);
-
-        $order->add_product($name);
     }
 
 }
