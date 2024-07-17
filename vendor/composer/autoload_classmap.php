@@ -7,4 +7,12 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
+    'DB' => $baseDir . '/src/database/DB.php',
+    'HomeController' => $baseDir . '/src/controllers/HomeController.php',
+    'Order' => $baseDir . '/src/models/Order.php',
+    'OrderController' => $baseDir . '/src/controllers/OrdersController.php',
+    'PreRegistrationController' => $baseDir . '/src/controllers/PreRegistrationController.php',
+    'Product' => $baseDir . '/src/models/Product.php',
+    'ProductDAO' => $baseDir . '/src/daos/productDAO.php',
+    'ProductsController' => $baseDir . '/src/controllers/ProductsController.php',
 );

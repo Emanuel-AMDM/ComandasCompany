@@ -4,9 +4,9 @@
   "type": "project",
   "license": "MIT",
   "autoload": {
-    "psr-4": {
-      "Php\\Boilerplate\\": "src/"
-    },
+    "classmap": [
+      "src/"
+    ],
     "files": [
       "src/helpers/controller.php",
       "src/helpers/view.php",

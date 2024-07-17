@@ -12,20 +12,6 @@ class ComposerStaticInit722216232bb439e3e8f18604b1ed9dc9
         'e02c45b67a3588ffda7b6d962cb0274a' => __DIR__ . '/../..' . '/src/helpers/url.php',
     );
 
-    public static $prefixLengthsPsr4 = array (
-        'P' => 
-        array (
-            'Php\\Boilerplate\\' => 16,
-        ),
-    );
-
-    public static $prefixDirsPsr4 = array (
-        'Php\\Boilerplate\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src',
-        ),
-    );
-
     public static $prefixesPsr0 = array (
         'B' => 
         array (
@@ -38,13 +24,19 @@ class ComposerStaticInit722216232bb439e3e8f18604b1ed9dc9
 
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'DB' => __DIR__ . '/../..' . '/src/database/DB.php',
+        'HomeController' => __DIR__ . '/../..' . '/src/controllers/HomeController.php',
+        'Order' => __DIR__ . '/../..' . '/src/models/Order.php',
+        'OrderController' => __DIR__ . '/../..' . '/src/controllers/OrdersController.php',
+        'PreRegistrationController' => __DIR__ . '/../..' . '/src/controllers/PreRegistrationController.php',
+        'Product' => __DIR__ . '/../..' . '/src/models/Product.php',
+        'ProductDAO' => __DIR__ . '/../..' . '/src/daos/productDAO.php',
+        'ProductsController' => __DIR__ . '/../..' . '/src/controllers/ProductsController.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit722216232bb439e3e8f18604b1ed9dc9::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit722216232bb439e3e8f18604b1ed9dc9::$prefixDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInit722216232bb439e3e8f18604b1ed9dc9::$prefixesPsr0;
             $loader->classMap = ComposerStaticInit722216232bb439e3e8f18604b1ed9dc9::$classMap;
 

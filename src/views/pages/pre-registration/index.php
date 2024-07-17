@@ -7,25 +7,27 @@
         <?= view('includes/nav-bar.php') ?>
         <div class="contents">
             
-            <h1>Setor</h1>
+            <h1>Pre-Cadastros</h1>
 
             <div class="button-create">
-                <a href="<?= url('/pre-cadastro/setor/create') ?>"><strong>Cadastrar</strong></a>
+                <a href="<?= url('/pre-cadastro/create') ?>"><strong>Cadastrar</strong></a>
             </div>
 
             <div class="table-products">
                 <table>
                     <thead>
                         <tr>
-                            <th>Nome</th>
+                            <th>Tipo</th>
+                            <th>Descrição</th>
                             <th>Ações</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Cerveja</td>
+                            <td>Marca</td>
+                            <td>Brahma</td>
                             <td>
-                                <a href="<?= url('/pre-cadastro/setor/edit') ?>"><i class="fa-solid fa-pen" style="color:green;"></i></a>
+                                <a href="<?= url('/pre-cadastro/edit') ?>"><i class="fa-solid fa-pen" style="color:green;"></i></a>
                                 <a href=""><i class="fa-solid fa-trash" style="color:red;"></i></a>
                             </td>
                         </tr>

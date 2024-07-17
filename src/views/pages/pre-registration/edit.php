@@ -7,11 +7,21 @@
         <?= view('includes/nav-bar.php') ?>
         <div class="contents">
             
-            <h1>Cadastro - Marca</h1>
-
+            <h1>Editar - Pre-Cadastro</h1>
+            <!-- mudar para um select onde ele vai escolher o tipo  -->
             <div class="contents-pre-registration">
+                <div class="select">
+                    <label for=""><strong>Tipo:</strong></label>
+                    <select name="" id="">
+                        <option value=""></option>
+                        <option value="1">Setor</option>
+                        <option value="2">Marca</option>
+                        <option value="3">Sabor</option>
+                        <option value="4">Tamanho</option>
+                    </select>
+                </div>   
                 <div class="input-text">
-                    <label for=""><strong>Nome Marca:</strong></label>
+                    <label for=""><strong>Descrição:</strong></label>
                     <input type="text">
                 </div>        
                 <div class="button-save-registration">
