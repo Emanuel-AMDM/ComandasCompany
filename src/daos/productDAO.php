@@ -4,7 +4,7 @@ class ProductDAO{
 
     public function save($product){
         // logica para salvar um produto no banco de dados
-        $query = "INSERT INTO products VAlues()";
+        $query = "INSERT INTO products values()";
         $result = DB::execute_query($query);
     }
 

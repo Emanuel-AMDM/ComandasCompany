@@ -6,18 +6,22 @@
     <div class="wrapper">
         <?= view('includes/nav-bar.php') ?>
         <div class="contents">
-            
-            <h1>Cadastrar Comanda</h1>
 
-            <div class="orders">
-                <div class="input-text">
-                    <label for=""><strong>Número Comanda</strong></label>
-                    <input type="text">
-                </div>        
-                <div class="button-save-registration">
-                    <button>Salvar</button>
+            <form action="<?= load_controller('/CardsController') ?>" method="post"></form>
+            
+                <h1>Cadastrar Comanda</h1>
+
+                <div class="orders">
+                    <div class="input-text">
+                        <label for=""><strong>Número Comanda</strong></label>
+                        <input type="text" name="number">
+                    </div>        
+                    <div class="button-save-registration">
+                        <button type="submit">Salvar</button>
+                    </div>
                 </div>
-            </div>
+            
+            </form>
                 
 
         </div>

@@ -27,7 +27,7 @@ class ComposerStaticInit722216232bb439e3e8f18604b1ed9dc9
         'DB' => __DIR__ . '/../..' . '/src/database/DB.php',
         'HomeController' => __DIR__ . '/../..' . '/src/controllers/HomeController.php',
         'Order' => __DIR__ . '/../..' . '/src/models/Order.php',
-        'OrderController' => __DIR__ . '/../..' . '/src/controllers/OrdersController.php',
+        'OrdersController' => __DIR__ . '/../..' . '/src/controllers/OrdersController.php',
         'PreRegistrationController' => __DIR__ . '/../..' . '/src/controllers/PreRegistrationController.php',
         'Product' => __DIR__ . '/../..' . '/src/models/Product.php',
         'ProductDAO' => __DIR__ . '/../..' . '/src/daos/productDAO.php',
