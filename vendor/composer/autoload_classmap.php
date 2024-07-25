@@ -6,6 +6,8 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'AtributtesOptions' => $baseDir . '/src/models/AtributtesOptions.php',
+    'AtributtesOptionsDAO' => $baseDir . '/src/daos/AtributtesOptionsDAO.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'DB' => $baseDir . '/src/database/DB.php',
     'HomeController' => $baseDir . '/src/controllers/HomeController.php',

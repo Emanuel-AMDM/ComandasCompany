@@ -9,10 +9,10 @@ class ProductsController{
     //renderiza a pagina
     static function showCreatePage(){
         
-        //cria o objeto productDAO
-        $productDAO = new ProductDAO();
+        //cria o objeto atributteDAO
+        $AtributtesOptionsDAO = new AtributtesOptionsDAO();
         //traz a function findSector
-        $setor = $productDAO->findSector();
+        $setor = $AtributtesOptionsDAO->findByTypeId();
         
         return view('pages/products/create.php',[
             'setor' => $setor

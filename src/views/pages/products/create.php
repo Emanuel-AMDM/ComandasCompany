@@ -16,7 +16,7 @@
                         <label for="sector"><strong>Setor</strong></label>
                         <select name="sector" id="sector">
                             <?php foreach($setor as $s): ?>
-                                <option value="<?=$s['name']?>"><?=$s['name']?></option>
+                                <option value="<?=$s->name?>"><?=$s->name?></option>
                             <?php endforeach; ?>
                         </select>
                     </div>
