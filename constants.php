@@ -1,7 +1,7 @@
 <?php
 
 define("HOST", "http://localhost:3000");
-define("HOST", "http://127.0.0.1/edsa-comandscompany");
+// define("HOST", "http://127.0.0.1/edsa-comandscompany");
 
 
 define("DB_HOST", "localhost");

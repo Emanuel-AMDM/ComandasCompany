@@ -1,13 +1,13 @@
 <link rel="stylesheet" href="<?= public_url('/css/home.css') ?>">
 <link rel="stylesheet" href="<?= public_url('/css/orders/edit.css') ?>">
 
-<div class="main"> 
+<div class="main">
     <?= view('includes/side-bar.php') ?>
     <div class="wrapper">
         <?= view('includes/nav-bar.php') ?>
         <div class="contents">
-            
-            <h1>Comanda - 55</h1>
+
+            <h1>Comanda - <?= $comanda->number ?></h1>
 
             <div class="contents-edit">
                 <div class="select">

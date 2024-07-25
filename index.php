@@ -19,8 +19,12 @@ $router->get('/comandas/create', function () {
     return OrdersController::showCreatePage();
 });
 
-$router->get('/comandas/edit', function () {
-    return OrdersController::showEditPage();
+$router->post('/comandas/create', function () {
+    return OrdersController::createOrder();
+});
+
+$router->get('/comandas/{id}/edit', function ($id) {
+    return OrdersController::showEditPage($id);
 });
 
 $router->get('/comandas/bill', function () {
@@ -43,15 +47,23 @@ $router->get('/produtos/edit', function () {
 // pre-cadastro
 // brand
 $router->get('/pre-cadastro', function () {
-    return PreRegistrationController::showIndexPage();
+    return RegistrationController::showIndexPage();
 });
 
 $router->get('/pre-cadastro/create', function () {
-    return PreRegistrationController::showCreatePage();
+    return RegistrationController::showCreatePage();
 });
 
-$router->get('/pre-cadastro/edit', function () {
-    return PreRegistrationController::showEditPage();
+$router->post('/pre-cadastro/create', function () {
+    return RegistrationController::createRegistration();
+});
+
+$router->get('/pre-cadastro/{id}/edit', function ($id) {
+    return RegistrationController::showEditPage($id);
+});
+
+$router->post('/pre-cadastro/{id}/edit', function ($id) {
+    return RegistrationController::editRegistration($id);
 });
 
 $router->run();

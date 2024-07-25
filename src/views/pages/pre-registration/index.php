@@ -23,14 +23,16 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>Marca</td>
-                            <td>Brahma</td>
-                            <td>
-                                <a href="<?= url('/pre-cadastro/edit') ?>"><i class="fa-solid fa-pen" style="color:green;"></i></a>
-                                <a href=""><i class="fa-solid fa-trash" style="color:red;"></i></a>
-                            </td>
-                        </tr>
+                        <?php foreach($registros as $row): ?>
+                            <tr>
+                                <td><?= $row->type_id ?></td>
+                                <td><?= $row->name ?></td>
+                                <td>
+                                    <a href="<?= url("/pre-cadastro/$row->id/edit") ?>"><i class="fa-solid fa-pen" style="color:green;"></i></a>
+                                    <a href=""><i class="fa-solid fa-trash" style="color:red;"></i></a>
+                                </td>
+                            </tr>
+                        <?php endforeach; ?>
                     </tbody>
                 </table>
             </div>

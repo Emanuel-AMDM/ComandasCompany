@@ -9,3 +9,7 @@ function url($path): string
 {
     return HOST . $path;
 }
+
+function redirect($path){
+    header('Location: ' . url($path));
+}

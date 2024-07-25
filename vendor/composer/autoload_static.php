@@ -27,11 +27,14 @@ class ComposerStaticInit722216232bb439e3e8f18604b1ed9dc9
         'DB' => __DIR__ . '/../..' . '/src/database/DB.php',
         'HomeController' => __DIR__ . '/../..' . '/src/controllers/HomeController.php',
         'Order' => __DIR__ . '/../..' . '/src/models/Order.php',
+        'OrderDAO' => __DIR__ . '/../..' . '/src/daos/OrderDAO.php',
         'OrdersController' => __DIR__ . '/../..' . '/src/controllers/OrdersController.php',
-        'PreRegistrationController' => __DIR__ . '/../..' . '/src/controllers/PreRegistrationController.php',
         'Product' => __DIR__ . '/../..' . '/src/models/Product.php',
-        'ProductDAO' => __DIR__ . '/../..' . '/src/daos/productDAO.php',
+        'ProductDAO' => __DIR__ . '/../..' . '/src/daos/ProductDAO.php',
         'ProductsController' => __DIR__ . '/../..' . '/src/controllers/ProductsController.php',
+        'Registration' => __DIR__ . '/../..' . '/src/models/Registration.php',
+        'RegistrationController' => __DIR__ . '/../..' . '/src/controllers/RegistrationController.php',
+        'RegistrationDAO' => __DIR__ . '/../..' . '/src/daos/RegistrationDAO.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
