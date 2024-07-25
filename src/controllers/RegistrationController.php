@@ -24,7 +24,7 @@ class RegistrationController{
         //Cria um novo objeto do tipo registro
         $registration = new Registration();
 
-        //Pega as informações enviadas via formulario POST e adiciona no objeto pedido
+        //Pega as informações enviadas via formulario POST e adiciona no objeto registro
         $registration->type_id = $_POST['type_id'];
         $registration->name    = $_POST['name'];
 
@@ -39,16 +39,16 @@ class RegistrationController{
     }
 
     //atualiza um registro no banco
-    static function editRegistration(){
+    static function editRegistration($id){
         //Cria um novo objeto do tipo registro
-        $registration = new Registration();
+        $registrationDAO = new RegistrationDAO();
+
+        //Cria um objeto do tipo registro
+        $registration = $registrationDAO->findById($id);
 
         //Pega as informações enviadas via formulario POST e atualiza no objeto pedido
         $registration->type_id = $_POST['type_id'];
         $registration->name    = $_POST['name'];
-
-        //Criar um novo objeto do tipo RegistrationDAO para atualizar o objeto registration no banco de dados
-        $registrationDAO = new RegistrationDAO();
 
         //Salvar o objeto no banco de dados
         $registrationDAO->edit($registration);

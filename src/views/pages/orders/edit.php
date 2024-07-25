@@ -7,24 +7,28 @@
         <?= view('includes/nav-bar.php') ?>
         <div class="contents">
 
-            <h1>Comanda - <?= $comanda->number ?></h1>
+            <!-- <form action="<?= url("/comandas/$registro->id/edit") ?>" method="post"> -->
 
-            <div class="contents-edit">
-                <div class="select">
-                    <label for=""><strong>Produto</strong></label>
-                    <select name="" id=""></select>
+                <h1>Comanda - <?= $comanda->number ?></h1>
+
+                <div class="contents-edit">
+                    <div class="select">
+                        <label for=""><strong>Produto</strong></label>
+                        <select name="" id=""></select>
+                    </div>
+                    <div class="input-number">
+                        <label for=""><strong>Quantidade</strong></label>
+                        <input type="number">
+                    </div>
+                    <div class="button-ask">
+                        <button><strong>Pedir</strong></button>
+                    </div>
+                    <div class="button-close">
+                        <button><strong>Fechar Conta</strong></button>
+                    </div>
                 </div>
-                <div class="input-number">
-                    <label for=""><strong>Quantidade</strong></label>
-                    <input type="number">
-                </div>
-                <div class="button-ask">
-                    <button><strong>Pedir</strong></button>
-                </div>
-                <div class="button-close">
-                    <button><strong>Fechar Conta</strong></button>
-                </div>
-            </div>
+            
+            <!-- </form> -->
 
             <div class="table">
                 <table>
