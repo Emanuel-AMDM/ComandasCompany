@@ -23,6 +23,8 @@ class ComposerStaticInit722216232bb439e3e8f18604b1ed9dc9
     );
 
     public static $classMap = array (
+        'Atributtes' => __DIR__ . '/../..' . '/src/models/Atributtes.php',
+        'AtributtesDAO' => __DIR__ . '/../..' . '/src/daos/AtributtesDAO.php',
         'AtributtesOptions' => __DIR__ . '/../..' . '/src/models/AtributtesOptions.php',
         'AtributtesOptionsDAO' => __DIR__ . '/../..' . '/src/daos/AtributtesOptionsDAO.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
