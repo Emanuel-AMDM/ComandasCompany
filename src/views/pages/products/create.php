@@ -18,7 +18,7 @@
                                 <strong><?= $atributte->name ?></strong>
                             </label>
                             
-                            <select name="<?= $atributte->name ?>" id="<?= $atributte->name ?>">
+                            <select name="attribute_option_ids[]" id="<?= $atributte->name ?>">
                                 <?php foreach($atributte->atributte_options as $option): ?>
                                     <option value="<?= $option->id ?>"><?= $option->name ?></option>
                                 <?php endforeach; ?>
@@ -29,8 +29,15 @@
 
                 <div class="contents-products">
                     <div class="input-text">
+                        <label for=""><strong>Título de Busca</strong></label>
+                        <input type="text" name="name">
+                    </div>
+                </div>
+
+                <div class="contents-products">
+                    <div class="input-text">
                         <label for=""><strong>Valor</strong></label>
-                        <input type="text" name="value">
+                        <input type="text" name="price">
                     </div>
                 </div>
 

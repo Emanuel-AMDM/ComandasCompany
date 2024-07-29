@@ -27,9 +27,9 @@ $router->get('/comandas/{id}/edit', function ($id) {
     return OrdersController::showEditPage($id);
 });
 
-// $router->post('/comandas/{id}/edit', function ($id) {
-//     return OrdersController::editOrder($id);
-// });
+$router->post('/comandas/edit', function () {
+    return OrderItemController::createOrderItem();
+});
 
 $router->get('/comandas/bill', function () {
     return OrdersController::showBillPage();

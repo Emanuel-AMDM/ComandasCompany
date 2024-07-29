@@ -19,19 +19,30 @@ class ProductsController{
         ]);
     }
 
-    //cria um registro no banco
+    /**
+     * Cria um novo produto
+     *
+     * @return void
+     */
     static function createProduct(){
+        $attributeOptionDAO = new AtributtesOptionsDAO();
+
         //cria um novo objeto do tipo produto
         $product = new Product();
+        
+        // Preenche os campos do produto
+        $product->price = $_POST['price'];
+        $product->name  = $_POST['name'];
 
-        //Pega as informações enviadas via form POST e adiciona no objeto produto
-        // $product->sector = $_POST['sector'];
-        // $product->type = $_POST['tipo'];
-        // $product->brand = $_POST['marca'];
-        // $product->flavor = $_POST['sabor'];
-        // $product->size = $_POST['tamanho'];
-        $atributte->name = $_POST['name'];
-        $product->value = $_POST['value'];
+        // Percorre cada um dos attribute option ids enviado pelo formulario
+        foreach ($_POST['attribute_option_ids'] as $attribute_option_id) {
+
+            // Carrega a entidade do banco de dados pelo id passado
+            $attribute_option = $attributeOptionDAO->findById($attribute_option_id);
+
+            // Adiciona o attribute option no product
+            $product->addAttributeOption($attribute_option);
+        }
 
         //Cria um novo objeto do tipo ProductDAO para salvar o objeto produto no banco de dados
         $productDAO = new ProductDAO();

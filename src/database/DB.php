@@ -21,8 +21,9 @@ class DB
                 throw new Exception(sprintf("Error message: %s", $conn->error));
             }
 
-            return $result;
+            return $conn->insert_id;
         }
+
         // Verifica se a consulta retornou resultados
         if ($result->num_rows === 0) {
             return [];

@@ -43,8 +43,14 @@ class OrdersController{
         //traz as informações do banco a partir do $id passado
         $comanda = $orderDAO->findById($id);
 
+        //cria o objeto ProductDAO
+        $ProductDAO = new ProductDAO();
+        //traz a function findall
+        $produto = $ProductDAO->findAll();
+
         return view('pages/orders/edit.php',[
-            'comanda' => $comanda
+            'comanda' => $comanda,
+            'produto' => $produto
         ]);
     }
 
