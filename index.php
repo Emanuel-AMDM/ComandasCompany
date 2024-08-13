@@ -48,8 +48,12 @@ $router->post('/produtos/create', function () {
     return ProductsController::createProduct();
 });
 
-$router->get('/produtos/edit', function () {
-    return ProductsController::showEditPage();
+$router->get('/produtos/{id}/edit', function ($id) {
+    return ProductsController::showEditPage($id);
+});
+
+$router->post('/produtos/{id}/edit', function ($id) {
+    return ProductsController::editProduct($id);
 });
 
 // pre-cadastro

@@ -7,17 +7,17 @@ class ProductDAO {
 
         //Executa a query do banco de dados
         $query = "SELECT * FROM products";
-        $results = DB::execute_query($query);
+        $result = DB::execute_query($query);
 
         //Se não encontrou nenhum resultado, volta null
-        if(count($results) === 0){
+        if(count($result) === 0){
             return[];
         }
 
         //Array de resposta
         $records = [];
 
-        foreach($results as $row){
+        foreach($result as $row){
             //Cria um objeto Product
             $product = new Product();
 
@@ -51,5 +51,56 @@ class ProductDAO {
 
             DB::execute_query($query);
         }
+    }
+
+    //Edita um registro de produto
+    public function edit(Product $product){
+
+        //não vem pelo post
+        $product->updated_at = date('Y-m-d H:i:s');
+
+        // Update o produto no banco pelo id inserido
+        $query = "UPDATE products SET price = '$product->price', name = '$product->name', created_at = '$product->created_at', updated_at = '$product->updated_at' WHERE id = $product->id";
+        $productId = DB::execute_query($query);
+
+        $query = "DELETE FROM products_attributes_options WHERE product_id = $product->id";
+        DB::execute_query($query);
+
+        foreach ($product->attribute_options as $attribute_option) {
+            $query = "INSERT INTO products_attributes_options (product_id, attribute_option_id, created_at, updated_at) VALUES ('$productId', '$attribute_option->id', '$product->created_at', '$product->updated_at')";
+
+            DB::execute_query($query);
+        }
+    }
+
+    /**
+     * Obtem um produto pelo ID via banco
+     */
+    public function findByID(String $id)//:Order|null
+    {
+        //Executa a busca no banco
+        $query = "SELECT * FROM products WHERE id = $id";
+        $result = DB::execute_query($query);
+
+        //Volta null caso não encontre resultado
+        if(count($result) === 0){
+            return null;
+        }
+
+        //Se encontrou o registro, pega o primeiro item
+        [$row] = $result;
+
+        //Cria o objeto product
+        $product = new Product();
+
+        //Popula o objeto product com os dados que vieram do banco
+        $product->id = $row['id'];
+        $product->name = $row['name'];
+        $product->price = $row['price'];
+        $product->created_at = $row['created_at'];
+        $product->updated_at = $row['updated_at'];
+
+        //Retorna o objeto do tipo product com os dados populados
+        return $product;
     }
 }

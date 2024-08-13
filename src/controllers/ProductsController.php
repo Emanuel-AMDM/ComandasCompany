@@ -3,7 +3,15 @@
 class ProductsController{
     //renderiza a pagina
     static function showIndexPage(){
-        return view('pages/products/index.php');
+        
+        //cria o objeto ProductDAO
+        $productDAO = new ProductDAO();
+        //chama a function findAll
+        $produtos = $productDAO->findAll();
+
+        return view('pages/products/index.php',[
+            'produtos' => $produtos
+        ]);
     }
 
     //renderiza a pagina
@@ -11,7 +19,7 @@ class ProductsController{
         
         //cria o objeto atributteDAO
         $AtributtesDAO = new AtributtesDAO();
-        //traz a function findSector
+        //traz a function findAll
         $atributtes = $AtributtesDAO->findAll();
         
         return view('pages/products/create.php',[
@@ -55,7 +63,41 @@ class ProductsController{
     }
 
     //renderiza a pagina
-    static function showEditPage(){
-        return view('pages/products/edit.php');
+    static function showEditPage(string $id){
+
+        //cria o objeto do banco
+        $productDAO = new ProductDAO();
+        //traz as info do banco a partir do $id
+        $product = $productDAO->findByID($id);
+
+        //cria o objeto attributeDAO
+        $attributeDAO = new AtributtesDAO();
+        //traz a function findAll
+        $attributes = $attributeDAO->findAll();
+
+        return view('pages/products/edit.php',[
+            'attributes' => $attributes,
+            'product' => $product
+        ]);
+    }
+
+    //Atualiza um registro no banco
+    static function editProduct($id){
+
+        //Cria um novo objeto do tipo product
+        $productDAO = new ProductDAO();
+        //cria um objeto do tipo product
+        $product = $productDAO->findByID($id);
+
+        //Pega as informações enviadas via formulario POST e atualiza no objeto pedido
+        $product->price = $_POST['price'];
+        $product->name  = $_POST['name'];
+        $product->created_at  = $_POST['created_at'];
+
+        //Salvar o objeto no banco
+        $productDAO->edit($product);
+
+        //Redirect
+        redirect('/produtos');
     }
 }

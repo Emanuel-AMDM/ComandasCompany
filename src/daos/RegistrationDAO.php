@@ -76,7 +76,7 @@ class RegistrationDAO{
         //Cria o objeto Registration
         $registration = new Registration();
 
-        //Popula o objeto order com os dados que vieram do banco de dados
+        //Popula o objeto Registration com os dados que vieram do banco de dados
         $registration->id = $row['id'];
         $registration->type_id = $row['type_id'];
         $registration->name = $row['name'];

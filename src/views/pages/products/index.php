@@ -17,28 +17,22 @@
                 <table>
                     <thead>
                         <tr>
-                            <th>Setor</th>
-                            <th>Tipo</th>
-                            <th>marca</th>
-                            <th>Sabor</th>
-                            <th>Tamanho</th>
-                            <th>Valor</th>
-                            <th>Ação</th>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Ações</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>Cerveja</td>
-                            <td>Garrafa</td>
-                            <td>Brahma</td>
-                            <td>Pilsen</td>
-                            <td>1L</td>
-                            <td>10$</td>
-                            <td>
-                                <a href="<?= url('/produtos/edit') ?>"><i class="fa-solid fa-pen" style="color:green;"></i></a>
-                                <a href=""><i class="fa-solid fa-trash" style="color:red;"></i></a>
-                            </td>
-                        </tr>
+                        <?php foreach($produtos as $row): ?>
+                            <tr>
+                                <td><?= $row->name ?></td>
+                                <td><?= $row->price ?></td>
+                                <td>
+                                    <a href="<?= url("/produtos/$row->id/edit") ?>"><i class="fa-solid fa-pen" style="color:green;"></i></a>
+                                    <a href=""><i class="fa-solid fa-trash" style="color:red;"></i></a>
+                                </td>
+                            </tr>
+                        <?php endforeach; ?>
                     </tbody>
                 </table>
             </div>

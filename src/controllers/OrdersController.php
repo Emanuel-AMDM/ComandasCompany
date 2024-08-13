@@ -37,12 +37,18 @@ class OrdersController{
 
     //renderiza a pagina
     static function showEditPage(string $id){
+        //FindAll da tabela com os pedidos
+        //cria o objeto OrderItemDAO
+        $OrderItemDAO = new OrderItemDAO();
+        //traz a function findall
+        $itens = $OrderItemDAO->findAll();
 
         //crio a instancia do banco
         $orderDAO = new OrderDAO();
         //traz as informações do banco a partir do $id passado
         $comanda = $orderDAO->findById($id);
 
+        //FindAll do campo produto
         //cria o objeto ProductDAO
         $ProductDAO = new ProductDAO();
         //traz a function findall
@@ -50,7 +56,8 @@ class OrdersController{
 
         return view('pages/orders/edit.php',[
             'comanda' => $comanda,
-            'produto' => $produto
+            'produto' => $produto,
+            'itens' => $itens
         ]);
     }
 

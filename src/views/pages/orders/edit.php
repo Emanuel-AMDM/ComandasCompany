@@ -13,8 +13,8 @@
 
                 <div class="contents-edit">
                     <div class="select">
-                        <label for="product"><strong>Produto</strong></label>
-                        <select name="product" id="product">
+                        <label for="product_id"><strong>Produto</strong></label>
+                        <select name="product_id" id="product_id">
                             <?php foreach($produto as $row): ?>
                                 <option value="<?= $row->id ?>"><?= $row->name ?></option>
                             <?php endforeach; ?>
@@ -39,18 +39,22 @@
                     <thead>
                         <tr>
                             <th>Produto</th>
+                            <th>Quantidade</th>
                             <th>Valor</th>
                             <th>Data/Hora</th>
                             <th>Ação</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>produto1</td>
-                            <td>10$</td>
-                            <td>02/03/2024 20:53:00</td>
-                            <td><a href=""><i class="fa-solid fa-trash" style="color:red;"></i></a></td>
-                        </tr>
+                        <?php foreach($itens as $item): ?>
+                            <tr>
+                                <td><?= $item->product_id ?></td>
+                                <td><?= $item->quantity ?></td>
+                                <td><?= $item->amount ?></td>
+                                <td><?= $item->created_at ?></td>
+                                <td><a href=""><i class="fa-solid fa-trash" style="color:red;"></i></a></td>
+                            </tr>
+                        <?php endforeach; ?>
                     </tbody>
                 </table>
             </div>
