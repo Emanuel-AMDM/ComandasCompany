@@ -83,6 +83,7 @@ class ProductsController{
 
     //Atualiza um registro no banco
     static function editProduct($id){
+        $attributeOptionDAO = new AtributtesOptionsDAO();
 
         //Cria um novo objeto do tipo product
         $productDAO = new ProductDAO();
@@ -94,8 +95,29 @@ class ProductsController{
         $product->name  = $_POST['name'];
         $product->created_at  = $_POST['created_at'];
 
+        // Percorre cada um dos attribute option ids enviado pelo formulario
+        foreach ($_POST['attribute_option_ids'] as $attribute_option_id) {
+
+            // Carrega a entidade do banco de dados pelo id passado
+            $attribute_option = $attributeOptionDAO->findById($attribute_option_id);
+
+            // Adiciona o attribute option no product
+            $product->addAttributeOption($attribute_option);
+        }
+
         //Salvar o objeto no banco
         $productDAO->edit($product);
+
+        //Redirect
+        redirect('/produtos');
+    }
+
+    //deleta um registro
+    static function deleteProduct($id){
+        //cria a instancia
+        $productDAO = new ProductDAO();
+
+        $productDAO->delete($id);
 
         //Redirect
         redirect('/produtos');

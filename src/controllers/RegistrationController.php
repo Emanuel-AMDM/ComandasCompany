@@ -69,4 +69,15 @@ class RegistrationController{
             'registro' => $registro
         ]);
     }
+
+    //deleta um registro
+    static function deleteRegistration($id){
+        //cria a instancia
+        $registrationDAO = new RegistrationDAO();
+
+        $registrationDAO->delete($id);
+
+        //Redirect
+        redirect('/pre-cadastro');
+    }
 }

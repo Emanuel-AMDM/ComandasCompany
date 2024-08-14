@@ -29,7 +29,7 @@
                                 <td><?= $row->price ?></td>
                                 <td>
                                     <a href="<?= url("/produtos/$row->id/edit") ?>"><i class="fa-solid fa-pen" style="color:green;"></i></a>
-                                    <a href=""><i class="fa-solid fa-trash" style="color:red;"></i></a>
+                                    <a href="<?= url("/produtos/$row->id/delete") ?>"><i class="fa-solid fa-trash" style="color:red;"></i></a>
                                 </td>
                             </tr>
                         <?php endforeach; ?>

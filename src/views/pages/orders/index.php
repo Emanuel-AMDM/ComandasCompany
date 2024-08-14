@@ -23,7 +23,7 @@
 
                         <div class="icons">
                             <div class="border-boll-trash">
-                                <a href=""><i class="fa-solid fa-trash" style="color:red;"></i></a>
+                                <a href="<?= url("/comandas/$comanda->id/delete") ?>"><i class="fa-solid fa-trash" style="color:red;"></i></a>
                             </div>
                         </div>
                     </div>

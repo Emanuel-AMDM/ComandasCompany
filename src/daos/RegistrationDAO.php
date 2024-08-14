@@ -86,4 +86,11 @@ class RegistrationDAO{
         //Retorna o objeto do tipo registro com os dados populados
         return $registration;
     }
+
+    //Deleta um registro de pedido no banco de dados
+    public function delete(string $id){
+
+        $query = "DELETE FROM atributtes_options WHERE id = $id";
+        DB::execute_query($query);
+    }
 }

@@ -102,4 +102,11 @@ class OrderDAO{
         $query = "INSERT INTO cards (number, client_id, created_at, updated_at) VALUES ($order->number, $order->client_id, '$order->created_at', '$order->updated_at')";
         DB::execute_query($query);
     }
+
+    //Deleta um registro de pedido no banco de dados
+    public function delete(string $id){
+
+        $query = "DELETE FROM cards WHERE id = $id";
+        DB::execute_query($query);
+    }
 }

@@ -21,4 +21,15 @@ class OrderItemController{
         //Redirect
         redirect('/comandas');
     }
+    
+    //deleta um registro
+    static function deleteOrderItem($id){
+        //cria a instancia
+        $OrderItemDAO = new OrderItemDAO();
+
+        $OrderItemDAO->delete($id);
+
+        //Redirect
+        redirect("/comandas/$id/edit");
+    }
 }

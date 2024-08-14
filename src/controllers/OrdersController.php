@@ -13,6 +13,17 @@ class OrdersController{
         ]);
     }
 
+    //deleta um registro
+    static function deleteOrder($id){
+        //cria a instancia
+        $orderDAO = new OrderDAO();
+
+        $orderDAO->delete($id);
+
+        //Redirect
+        redirect('/comandas');
+    }
+
     //renderiza a pagina
     static function showCreatePage(){
         return view('pages/orders/create.php');

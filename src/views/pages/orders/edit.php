@@ -52,7 +52,7 @@
                                 <td><?= $item->quantity ?></td>
                                 <td><?= $item->amount ?></td>
                                 <td><?= $item->created_at ?></td>
-                                <td><a href=""><i class="fa-solid fa-trash" style="color:red;"></i></a></td>
+                                <td><a href="<?= url("/item/$item->id/delete") ?>"><i class="fa-solid fa-trash" style="color:red;"></i></a></td>
                             </tr>
                         <?php endforeach; ?>
                     </tbody>

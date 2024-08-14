@@ -46,4 +46,11 @@ class OrderItemDAO{
         $query = "INSERT INTO orders (product_id, quantity, amount, created_at, updated_at) VALUES ($order_item->product_id, $order_item->quantity, $order_item->amount, '$order_item->created_at', '$order_item->updated_at')";
         DB::execute_query($query);
     }
+
+    //Deleta um registro de pedido no banco de dados
+    public function delete(string $id){
+
+        $query = "DELETE FROM orders WHERE id = $id";
+        DB::execute_query($query);
+    }
 }
