@@ -11,40 +11,40 @@
             
                 <h1>Editar - Produto</h1>
 
-                <?php foreach($attributes as $attribute): ?>
-                    <input type="hidden" name="created_at" value="<?= $attribute->created_at ?>">
+                <div class="contents-wrap">
+                    <?php foreach($attribute as $attributes): ?>
+                        <input type="hidden" name="created_at" value="<?= $attributes->created_at ?>">
+                        
+                        <div class="contents-products">
+                            <div class="select">
+                                <label for="<?= $attributes->name ?>">
+                                    <strong><?= $attributes->name ?></strong>
+                                </label>
+                                
+                                <select name="attribute_option_ids[]" id="<?= $attributes->name ?>">
+                                    <?php foreach($attributes->attribute_options as $option): ?>
+                                        <option value="<?= $option->id ?>"><?= $option->name ?></option>
+                                    <?php endforeach; ?>
+                                </select>
+                            </div>
+                        </div>
+                    <?php endforeach ?>
                     
                     <div class="contents-products">
-                        <div class="select">
-                            <label for="<?= $attribute->name ?>">
-                                <strong><?= $attribute->name ?></strong>
-                            </label>
-                            
-                            <select name="attribute_option_ids[]" id="<?= $attribute->name ?>">
-                                <?php foreach($attribute->atributte_options as $option): ?>
-                                    <option value="<?= $option->id ?>"><?= $option->name ?></option>
-                                <?php endforeach; ?>
-                            </select>
+                        <div class="input-text">
+                            <label for=""><strong>Título de Busca</strong></label>
+                            <input type="text" name="name">
                         </div>
-                    </div>
-                <?php endforeach ?>
-
-                <div class="contents-products">
-                    <div class="input-text">
-                        <label for=""><strong>Título de Busca</strong></label>
-                        <input type="text" name="name">
-                    </div>
-                </div>
-
-                <div class="contents-products">
-                    <div class="input-text">
-                        <label for=""><strong>Valor</strong></label>
-                        <input type="text" name="price">
-                    </div>
-                </div>
-
-                <div class="button-save">
-                    <button type="submit">Salvar</button>
+    
+                        <div class="input-text">
+                            <label for=""><strong>Valor</strong></label>
+                            <input type="text" name="price">
+                        </div>
+                        
+                        <div class="button-save">
+                            <button type="submit">Salvar</button>
+                        </div>
+                    </div>  
                 </div>
 
             </form>

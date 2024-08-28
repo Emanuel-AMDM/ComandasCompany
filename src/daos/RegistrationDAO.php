@@ -9,7 +9,7 @@ class RegistrationDAO{
         $registration->created_at = date('Y-m-d H:i:s');
         $registration->updated_at = date('Y-m-d H:i:s');
 
-        $query = "INSERT INTO atributtes_options (type_id, name, created_at, updated_at) VALUES ($registration->type_id, '$registration->name', '$registration->created_at', '$registration->updated_at')";
+        $query = "INSERT INTO attribute_options (type_id, name, created_at, updated_at) VALUES ($registration->type_id, '$registration->name', '$registration->created_at', '$registration->updated_at')";
         DB::execute_query($query);
     }
 
@@ -20,7 +20,7 @@ class RegistrationDAO{
         $registration->created_at = date('Y-m-d H:i:s');
         $registration->updated_at = date('Y-m-d H:i:s');
 
-        $query = "UPDATE atributtes_options SET type_id = $registration->type_id, name = '$registration->name', created_at = '$registration->created_at', updated_at = '$registration->updated_at' WHERE id = $registration->id";
+        $query = "UPDATE attribute_options SET type_id = $registration->type_id, name = '$registration->name', created_at = '$registration->created_at', updated_at = '$registration->updated_at' WHERE id = $registration->id";
         DB::execute_query($query);
     }
 
@@ -28,7 +28,7 @@ class RegistrationDAO{
     public function findAll(): Array{
         
         //Executa a busca no banco
-        $query = "SELECT * FROM atributtes_options";
+        $query = "SELECT * FROM attribute_options";
         $results = DB::execute_query($query);
 
         //Se não encontrou nenhum registro com o id informado, volta null
@@ -62,7 +62,7 @@ class RegistrationDAO{
     public function findByID(string $id)//:Order|null
     {
         //Executa a busca no banco
-        $query = "SELECT * FROM atributtes_options WHERE id = $id";
+        $query = "SELECT * FROM attribute_options WHERE id = $id";
         $result = DB::execute_query($query);
 
         //Se não encontrou nenhum registro com o id informado, volta null
@@ -90,7 +90,7 @@ class RegistrationDAO{
     //Deleta um registro de pedido no banco de dados
     public function delete(string $id){
 
-        $query = "DELETE FROM atributtes_options WHERE id = $id";
+        $query = "DELETE FROM attribute_options WHERE id = $id";
         DB::execute_query($query);
     }
 }

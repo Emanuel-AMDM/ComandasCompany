@@ -1,6 +1,6 @@
 <?php
 
-class AtributtesDAO{
+class AttributeDAO{
 
     public function findAll(){
         
@@ -12,27 +12,27 @@ class AtributtesDAO{
             return [];
         }
 
-        $atributtesOptionsDAO = new AtributtesOptionsDAO();
+        $attributeOptionDAO = new AttributeOptionDAO();
 
         //Array de resposta
         $results = [];
 
         foreach ($db_results as $db_row) {
-            //Cria um objeto Atributte
-            $atributte = new Atributtes();
+            //Cria um objeto Attribute
+            $attribute = new Attribute();
 
             //Popular o objeto order com os dados que vieram do banco de dados
-            $atributte->id = $db_row['id'];
-            $atributte->name = $db_row['name'];
-            $atributte->created_at = $db_row['created_at'];
-            $atributte->updated_at = $db_row['updated_at'];
+            $attribute->id = $db_row['id'];
+            $attribute->name = $db_row['name'];
+            $attribute->created_at = $db_row['created_at'];
+            $attribute->updated_at = $db_row['updated_at'];
 
             // Obtem as opções de atributo para popular o objeto
-            $options = $atributtesOptionsDAO->findByTypeId($atributte->id);
-            $atributte->atributte_options = $options;
+            $options = $attributeOptionDAO->findByTypeId($attribute->id);
+            $attribute->attribute_options = $options;
 
             //Retorna o objeto do tipo atributo com os dados populados
-            $results[] = $atributte;
+            $results[] = $attribute;
         }
 
         //Retorna a lista com todos os registros encontrados no banco

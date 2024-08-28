@@ -11,38 +11,38 @@
             
                 <h1>Cadastrar - Produto</h1>
 
-                <?php foreach($atributtes as $atributte): ?>
+                <div class="contents-wrap">
+                    <?php foreach($attribute as $attributes): ?>
+                        <div class="contents-products">
+                            <div class="select">
+                                <label for="<?= $attributes->name ?>">
+                                    <strong><?= $attributes->name ?></strong>
+                                </label>
+                                
+                                <select name="attribute_option_ids[]" id="<?= $attributes->name ?>">
+                                    <?php foreach($attributes->attribute_options as $option): ?>
+                                        <option value="<?= $option->id ?>"><?= $option->name ?></option>
+                                    <?php endforeach; ?>
+                                </select>
+                            </div>
+                        </div>
+                    <?php endforeach ?>
+
                     <div class="contents-products">
-                        <div class="select">
-                            <label for="<?= $atributte->name ?>">
-                                <strong><?= $atributte->name ?></strong>
-                            </label>
-                            
-                            <select name="attribute_option_ids[]" id="<?= $atributte->name ?>">
-                                <?php foreach($atributte->atributte_options as $option): ?>
-                                    <option value="<?= $option->id ?>"><?= $option->name ?></option>
-                                <?php endforeach; ?>
-                            </select>
+                        <div class="input-text">
+                            <label for=""><strong>Título de Busca</strong></label>
+                            <input type="text" name="name">
+                        </div>
+
+                        <div class="input-text">
+                            <label for=""><strong>Valor</strong></label>
+                            <input type="text" name="price">
+                        </div>
+                        
+                        <div class="button-save">
+                            <button type="submit">Salvar</button>
                         </div>
                     </div>
-                <?php endforeach ?>
-
-                <div class="contents-products">
-                    <div class="input-text">
-                        <label for=""><strong>Título de Busca</strong></label>
-                        <input type="text" name="name">
-                    </div>
-                </div>
-
-                <div class="contents-products">
-                    <div class="input-text">
-                        <label for=""><strong>Valor</strong></label>
-                        <input type="text" name="price">
-                    </div>
-                </div>
-
-                <div class="button-save">
-                    <button type="submit">Salvar</button>
                 </div>
 
             </form>

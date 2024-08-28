@@ -23,10 +23,13 @@ class ComposerStaticInit722216232bb439e3e8f18604b1ed9dc9
     );
 
     public static $classMap = array (
-        'Atributtes' => __DIR__ . '/../..' . '/src/models/Atributtes.php',
-        'AtributtesDAO' => __DIR__ . '/../..' . '/src/daos/AtributtesDAO.php',
-        'AtributtesOptions' => __DIR__ . '/../..' . '/src/models/AtributtesOptions.php',
-        'AtributtesOptionsDAO' => __DIR__ . '/../..' . '/src/daos/AtributtesOptionsDAO.php',
+        'Attribute' => __DIR__ . '/../..' . '/src/models/Attribute.php',
+        'AttributeDAO' => __DIR__ . '/../..' . '/src/daos/AttributeDAO.php',
+        'AttributeOption' => __DIR__ . '/../..' . '/src/models/AttributeOption.php',
+        'AttributeOptionDAO' => __DIR__ . '/../..' . '/src/daos/AttributeOptionDAO.php',
+        'Client' => __DIR__ . '/../..' . '/src/models/Client.php',
+        'ClientController' => __DIR__ . '/../..' . '/src/controllers/ClientController.php',
+        'ClientDAO' => __DIR__ . '/../..' . '/src/daos/ClientDAO.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'DB' => __DIR__ . '/../..' . '/src/database/DB.php',
         'HomeController' => __DIR__ . '/../..' . '/src/controllers/HomeController.php',

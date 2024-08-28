@@ -5,6 +5,16 @@ require __DIR__ . '/constants.php';
 
 $router = new \Bramus\Router\Router();
 
+
+//login
+$router->get('/login', function () {
+    return ClientController::showLoginPage();
+});
+
+$router->post('/login', function () {
+    return ClientController::Login();
+});
+
 // home
 $router->get('/', function () {
     return HomeController::showHomePage();

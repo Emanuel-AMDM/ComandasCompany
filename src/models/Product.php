@@ -18,7 +18,7 @@ class Product {
 
     public $attribute_options = [];
 
-    public function addAttributeOption(AtributtesOptions $attribute_option) {
+    public function addAttributeOption(AttributeOption $attribute_option) {
         $this->attribute_options[] = $attribute_option;
     }
 }

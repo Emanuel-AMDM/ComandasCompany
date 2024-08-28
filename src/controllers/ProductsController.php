@@ -17,13 +17,13 @@ class ProductsController{
     //renderiza a pagina
     static function showCreatePage(){
         
-        //cria o objeto atributteDAO
-        $AtributtesDAO = new AtributtesDAO();
+        //cria o objeto attributeDAO
+        $AttributeDAO = new AttributeDAO();
         //traz a function findAll
-        $atributtes = $AtributtesDAO->findAll();
+        $attribute = $AttributeDAO->findAll();
         
         return view('pages/products/create.php',[
-            'atributtes' => $atributtes
+            'attribute' => $attribute
         ]);
     }
 
@@ -33,7 +33,7 @@ class ProductsController{
      * @return void
      */
     static function createProduct(){
-        $attributeOptionDAO = new AtributtesOptionsDAO();
+        $attributeOptionDAO = new AttributeOptionDAO();
 
         //cria um novo objeto do tipo produto
         $product = new Product();
@@ -71,19 +71,19 @@ class ProductsController{
         $product = $productDAO->findByID($id);
 
         //cria o objeto attributeDAO
-        $attributeDAO = new AtributtesDAO();
+        $attributeDAO = new AttributeDAO();
         //traz a function findAll
-        $attributes = $attributeDAO->findAll();
+        $attribute = $attributeDAO->findAll();
 
         return view('pages/products/edit.php',[
-            'attributes' => $attributes,
+            'attribute' => $attribute,
             'product' => $product
         ]);
     }
 
     //Atualiza um registro no banco
     static function editProduct($id){
-        $attributeOptionDAO = new AtributtesOptionsDAO();
+        $attributeOptionDAO = new AttributeOptionDAO();
 
         //Cria um novo objeto do tipo product
         $productDAO = new ProductDAO();

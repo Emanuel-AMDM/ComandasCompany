@@ -47,7 +47,7 @@ class ProductDAO {
         $productId = DB::execute_query($query);
 
         foreach ($product->attribute_options as $attribute_option) {
-            $query = "INSERT INTO products_attributes_options (product_id, attribute_option_id, created_at, updated_at) VALUES ('$productId', '$attribute_option->id', '$product->created_at', '$product->updated_at')";
+            $query = "INSERT INTO product_attribute_options (product_id, attribute_option_id, created_at, updated_at) VALUES ('$productId', '$attribute_option->id', '$product->created_at', '$product->updated_at')";
 
             DB::execute_query($query);
         }
@@ -63,11 +63,11 @@ class ProductDAO {
         $query = "UPDATE products SET price = '$product->price', name = '$product->name', created_at = '$product->created_at', updated_at = '$product->updated_at' WHERE id = $product->id";
         DB::execute_query($query);
 
-        $query = "DELETE FROM products_attributes_options WHERE product_id = $product->id";
+        $query = "DELETE FROM product_attribute_options WHERE product_id = $product->id";
         DB::execute_query($query);
 
         foreach ($product->attribute_options as $attribute_option) {
-            $query = "INSERT INTO products_attributes_options (product_id, attribute_option_id, created_at, updated_at) VALUES ('$product->id', '$attribute_option->id', '$product->created_at', '$product->updated_at')";
+            $query = "INSERT INTO product_attribute_options (product_id, attribute_option_id, created_at, updated_at) VALUES ('$product->id', '$attribute_option->id', '$product->created_at', '$product->updated_at')";
 
             DB::execute_query($query);
         }
@@ -79,7 +79,7 @@ class ProductDAO {
         $query = "DELETE FROM products WHERE id = $id";
         DB::execute_query($query);
 
-        $query = "DELETE FROM products_attributes_options WHERE product_id = $id";
+        $query = "DELETE FROM product_attribute_options WHERE product_id = $id";
         DB::execute_query($query);
     }
 

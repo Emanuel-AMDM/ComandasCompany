@@ -1,6 +1,6 @@
 <?php
 
-class AtributtesOptions{
+class AttributeOption{
 
     //id do atributo
     public $id;

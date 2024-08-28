@@ -6,10 +6,13 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Atributtes' => $baseDir . '/src/models/Atributtes.php',
-    'AtributtesDAO' => $baseDir . '/src/daos/AtributtesDAO.php',
-    'AtributtesOptions' => $baseDir . '/src/models/AtributtesOptions.php',
-    'AtributtesOptionsDAO' => $baseDir . '/src/daos/AtributtesOptionsDAO.php',
+    'Attribute' => $baseDir . '/src/models/Attribute.php',
+    'AttributeDAO' => $baseDir . '/src/daos/AttributeDAO.php',
+    'AttributeOption' => $baseDir . '/src/models/AttributeOption.php',
+    'AttributeOptionDAO' => $baseDir . '/src/daos/AttributeOptionDAO.php',
+    'Client' => $baseDir . '/src/models/Client.php',
+    'ClientController' => $baseDir . '/src/controllers/ClientController.php',
+    'ClientDAO' => $baseDir . '/src/daos/ClientDAO.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'DB' => $baseDir . '/src/database/DB.php',
     'HomeController' => $baseDir . '/src/controllers/HomeController.php',

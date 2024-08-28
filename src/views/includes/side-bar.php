@@ -28,5 +28,4 @@
     </div>
 
     <script src="https://kit.fontawesome.com/5dc8345cee.js" crossorigin="anonymous"></script>
-    <!-- <script src="<?= public_url('/javascript/collapse.js') ?>" crossorigin="anonymous"></script> -->
 </div>

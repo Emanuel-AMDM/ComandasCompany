@@ -1,11 +1,11 @@
 <?php
 
-class AtributtesOptionsDAO
+class AttributeOptionDAO
 {
     public function findById(string $id)
     {
         //Executa a busca no banco
-        $query = "SELECT * FROM atributtes_options WHERE id = $id";
+        $query = "SELECT * FROM attribute_options WHERE id = $id";
         $results = DB::execute_query($query);
 
         //Se não encontrou nenhum registro com o id informado, volta null
@@ -17,17 +17,17 @@ class AtributtesOptionsDAO
         [$row] = $results;//mesma coisa que "$row = $result[0];"
 
 
-        //Cria um objeto Atributte
-        $atributtesOptions = new AtributtesOptions();
+        //Cria um objeto Attribute
+        $attributeOption = new AttributeOption();
 
         //Popular o objeto order com os dados que vieram do banco de dados
-        $atributtesOptions->id = $row['id'];
-        $atributtesOptions->type_id = $row['type_id'];
-        $atributtesOptions->name = $row['name'];
-        $atributtesOptions->created_at = $row['created_at'];
-        $atributtesOptions->updated_at = $row['updated_at'];
+        $attributeOption->id = $row['id'];
+        $attributeOption->type_id = $row['type_id'];
+        $attributeOption->name = $row['name'];
+        $attributeOption->created_at = $row['created_at'];
+        $attributeOption->updated_at = $row['updated_at'];
 
-        return $atributtesOptions;
+        return $attributeOption;
     }
 
 
@@ -35,7 +35,7 @@ class AtributtesOptionsDAO
     public function findByTypeId(string $type_id): array
     {
         //Executa a busca no banco
-        $query = "SELECT * FROM atributtes_options WHERE type_id = $type_id";
+        $query = "SELECT * FROM attribute_options WHERE type_id = $type_id";
         $results = DB::execute_query($query);
 
         //Se não encontrou nenhum registro com o id informado, volta null
@@ -44,24 +44,24 @@ class AtributtesOptionsDAO
         }
 
         //Array de resposta
-        $atributtes = [];
+        $attributes = [];
 
         foreach ($results as $row) {
-            //Cria um objeto Atributte
-            $atributtesOptions = new AtributtesOptions();
+            //Cria um objeto Attribute
+            $attributeOption = new AttributeOption();
 
             //Popular o objeto order com os dados que vieram do banco de dados
-            $atributtesOptions->id = $row['id'];
-            $atributtesOptions->type_id = $row['type_id'];
-            $atributtesOptions->name = $row['name'];
-            $atributtesOptions->created_at = $row['created_at'];
-            $atributtesOptions->updated_at = $row['updated_at'];
+            $attributeOption->id = $row['id'];
+            $attributeOption->type_id = $row['type_id'];
+            $attributeOption->name = $row['name'];
+            $attributeOption->created_at = $row['created_at'];
+            $attributeOption->updated_at = $row['updated_at'];
 
             //Retorna o objeto do tipo atributo com os dados populados
-            $atributtes[] = $atributtesOptions;
+            $attributes[] = $attributeOption;
         }
 
         //Retorna a lista com todos os registros encontrados no banco
-        return $atributtes;
+        return $attributes;
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-class Atributtes{
+class Attribute{
 
     /**
      * Id do atributo no banco de dados
@@ -15,7 +15,7 @@ class Atributtes{
     /**
      * Opções de configuração do atributo
      */
-    public $atributte_options = [];
+    public $attribute_options = [];
 
     /**
      * Data que o registro foi criado

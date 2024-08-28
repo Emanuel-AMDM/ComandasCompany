@@ -4,10 +4,16 @@
 
 .contents{
     padding: 30px 70px;
-
-    .contents-products{
-        margin-top: 25px;
+    
+    .contents-wrap{
         display: flex;
+        flex-wrap: wrap;
+        padding: 10px 0px;
         gap: 30px;
+
+        .contents-products{
+            display: flex;
+            gap: 30px;
+        }
     }
 }
