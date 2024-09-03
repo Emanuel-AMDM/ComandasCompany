@@ -1,4 +1,6 @@
 <?php
+session_start();
+$user = $_SESSION['user'];
 
 require __DIR__ . '/vendor/autoload.php';
 require __DIR__ . '/constants.php';
@@ -12,11 +14,18 @@ $router->get('/login', function () {
 });
 
 $router->post('/login', function () {
-    return ClientController::Login();
+    return ClientController::login();
+});
+
+$router->get('/logout', function () {
+    return ClientController::logout();
 });
 
 // home
 $router->get('/', function () {
+    if(isset($user)){
+        redirect('/login');
+    }
     return HomeController::showHomePage();
 });
 
