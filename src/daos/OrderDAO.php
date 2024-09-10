@@ -95,7 +95,7 @@ class OrderDAO{
 
     //Cria um novo registro de pedido no banco de dados
     public function create(Order $order){
-        $order->client_id = '1';
+        
         $order->created_at = date('Y-m-d H:i:s');
         $order->updated_at = date('Y-m-d H:i:s');
 

@@ -3,7 +3,7 @@
 class OrderItemController{
 
     //Cria um novo pedido
-    static function createOrderItem(){
+    static function createOrderItem($id){
 
         //Cria um novo objeto do tipo item do pedido
         $order_item = new OrderItem();
@@ -11,6 +11,7 @@ class OrderItemController{
         //Pega as informações enviadas via form POST e adiciona no objeto item do pedido
         $order_item->product_id = $_POST['product_id'];
         $order_item->quantity = $_POST['quantity'];
+        $order_item->card_id = $_POST['id_comanda'];
 
         //Cria um novo objeto do tipo OrderItemDAO para salvar o objeto no banco de dados
         $orderItemDAO = new OrderItemDAO();
@@ -19,7 +20,7 @@ class OrderItemController{
         $orderItemDAO->create($order_item);
 
         //Redirect
-        redirect('/comandas');
+        redirect("/comandas/$id/edit");
     }
     
     //deleta um registro

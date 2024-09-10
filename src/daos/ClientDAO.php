@@ -32,4 +32,15 @@ class ClientDAO{
         //Retorna o objeto do tipo client com os dados populados
         return $client;
     }
+
+    //Cria um novo cliente
+    public static function create(Client $client){
+
+        $client->created_at = date('Y-m-d H:i:s');
+        $client->updated_at = date('Y-m-d H:i:s');
+
+        //Insere o cliente no banco de dados
+        $query = "INSERT INTO clients (name, email, password, created_at, updated_at) VALUES ('$client->name', '$client->email', '$client->password', '$client->created_at', '$client->updated_at')";
+        DB::execute_query($query);
+    }
 }

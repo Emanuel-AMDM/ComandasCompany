@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="<?= public_url('/css/auth/login-register.css') ?>">
-    <title>Login</title>
+    <title>Registrar</title>
 </head>
 <body>
     
@@ -17,25 +17,24 @@
             <form action="" method="post">
                 <div class="contents-center">
                     <div class="input-login">
+                        <label for="name">Nome</label>
+                        <input type="text" name="name" required>
+
                         <label for="email">E-mail</label>
-                        <input type="text" name="email">
+                        <input type="text" name="email" required>
 
                         <label for="password">Senha</label>
-                        <input type="password" name="password">
-                        
-                        <a href="">Esqueci minha senha!</a>
+                        <div>
+                            <input type="password" name="password" required>
+                            <i class="fa-solid fa-eye"></i>
+                        </div>
                     </div>
                 </div>
 
                 <div class="button-login">
                     <div class="register">
-                        <a href="<?= url('/register') ?>" class="button-21">
-                            <span>Registrar-se</span>
-                        </a>
-                    </div>
-                    <div class="login">
                         <button class="button-21" role="button" type="submit">
-                            <span class="text">Login</span>
+                            <span class="text">Registrar</span>
                         </button>
                     </div>
                 </div>

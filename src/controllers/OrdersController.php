@@ -30,11 +30,15 @@ class OrdersController{
     }
 
     static function createOrder(){
+        session_start();
+        $_SESSION['user'] = serialize($client);
+        
         //Cria um novo objeto do tipo pedido
         $order = new Order();
 
         //Pega as informações enviadas via formulario POST e adiciona no objeto pedido
         $order->number = $_POST['number'];
+        $order->client_id = $_POST['client_id'];
 
         //Cria um novo objeto do tipo OrderDAO para salvar o objeto order no banco de dados
         $orderDAO = new OrderDAO();
@@ -52,7 +56,7 @@ class OrdersController{
         //cria o objeto OrderItemDAO
         $OrderItemDAO = new OrderItemDAO();
         //traz a function findall
-        $itens = $OrderItemDAO->findAll();
+        $itens = $OrderItemDAO->findByItemOrderId($id);
 
         //crio a instancia do banco
         $orderDAO = new OrderDAO();
@@ -73,7 +77,22 @@ class OrdersController{
     }
 
     //renderiza a pagina
-    static function showBillPage(){
-        return view('page/orders/bill.php');
+    static function showBillPage($id){
+        //cria a instancia OrderItemDAO
+        $OrderItemDAO = new OrderItemDAO();
+
+        //traz os pedidos da comanda
+        $itens = $OrderItemDAO->findByItemOrderId($id);
+
+        //cria a instancia OrderDAO
+        $orderDAO = new OrderDAO();
+
+        //traz informações da comanda
+        $comanda = $orderDAO->findById($id);
+
+        return view('pages/orders/bill.php', [
+            'itens' => $itens,
+            'comanda' => $comanda
+        ]);
     }
 }

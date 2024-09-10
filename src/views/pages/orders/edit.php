@@ -7,9 +7,12 @@
         <?= view('includes/nav-bar.php') ?>
         <div class="contents">
 
-            <form action="<?= url("/comandas/edit") ?>" method="post">
+            <form action="<?= url("/comandas/$comanda->id/edit") ?>" method="post">
 
                 <h1>Comanda - <?= $comanda->number ?></h1>
+
+                <!-- Input para pegar o numero da Comanda -->
+                <input type="hidden" name="id_comanda" value="<?= $comanda->id ?>">
 
                 <div class="contents-edit">
                     <div class="select">
@@ -28,7 +31,7 @@
                         <button type="submit"><strong>Pedir</strong></button>
                     </div>
                     <div class="button-close">
-                        <button><strong>Fechar Conta</strong></button>
+                        <a href="<?= url("/comandas/$comanda->id/bill") ?>"><strong>Fechar Conta</strong></a>
                     </div>
                 </div>
             

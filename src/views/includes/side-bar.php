@@ -1,3 +1,7 @@
+<?php
+    $client = unserialize($_SESSION['user']);
+?>
+
 <link rel="stylesheet" href="<?= public_url('/css/side-bar.css') ?>">
 
 <div class="side-bar-menu">
@@ -9,7 +13,7 @@
 
     <div class="user">
         <i class="fa-solid fa-user"></i>
-        <span>Emanuel Menezes</span>
+        <span><?= $client->name ?></span>
     </div>
 
     <hr>

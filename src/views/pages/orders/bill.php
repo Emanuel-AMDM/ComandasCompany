@@ -7,7 +7,7 @@
         <?= view('includes/nav-bar.php') ?>
         <div class="contents">
             
-            <h1>Conta - 55</h1>
+            <h1>Conta - <?= $comanda->number ?></h1>
 
             <div class="contents-bill">
                 <div class="input-text">
@@ -28,18 +28,20 @@
                     <thead>
                         <tr>
                             <th>Produto</th>
+                            <th>Quantidade</th>
                             <th>Valor</th>
                             <th>Data/Hora</th>
-                            <th>Ação</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>produto1</td>
-                            <td>10$</td>
-                            <td>02/03/2024 20:53:00</td>
-                            <td><a href=""><i class="fa-solid fa-trash" style="color:red;"></i></a></td>
-                        </tr>
+                        <?php foreach($itens as $item): ?>
+                            <tr>
+                                <td><?= $item->product_id ?></td>
+                                <td><?= $item->quantity ?></td>
+                                <td><?= $item->amount ?></td>
+                                <td><?= $item->created_at ?></td>
+                            </tr>
+                        <?php endforeach; ?>
                     </tbody>
                 </table>
             </div>

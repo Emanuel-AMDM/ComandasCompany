@@ -14,6 +14,9 @@ class OrderItem{
     //Valor do produto adicionado
     public $amount;
 
+    //Id da comanda atrelada ao pedido
+    public $card_id;
+
     //Data que o registro foi criado
     public $created_at;
 
