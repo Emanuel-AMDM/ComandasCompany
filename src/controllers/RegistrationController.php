@@ -65,8 +65,15 @@ class RegistrationController{
         //Traz as info do banco a partir do $id
         $registro = $registrationDAO->findById($id);
 
+        //cria a instancia ProductDAO
+        $productDAO = new ProductDAO();
+
+        //cria o objeto findbyid
+        $product = $productDAO->findById($id);
+
         return view('pages/pre-registration/edit.php',[
-            'registro' => $registro
+            'registro' => $registro,
+            'product' => $product
         ]);
     }
 

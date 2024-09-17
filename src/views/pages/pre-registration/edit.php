@@ -16,10 +16,6 @@
                         <label for=""><strong>Tipo:</strong></label>
                         <select name="type_id" id="type_id">
                             <option value="<?= $registro->type_id ?>"><?= $registro->type_id ?></option>
-                            <option value="1">Setor</option>
-                            <option value="2">Marca</option>
-                            <option value="3">Sabor</option>
-                            <option value="4">Tamanho</option>
                         </select>
                     </div>   
                     <div class="input-text">

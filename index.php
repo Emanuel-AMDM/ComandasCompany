@@ -80,7 +80,11 @@ $router->post('/comandas/{id}/edit', function ($id) {
     return OrderItemController::createOrderItem($id);
 });
 
-$router->get('/comandas/{id}/bill', function ($id) {
+$router->post('/comandas/bill/paid', function () {
+    return OrdersController::billPaid();
+});
+
+$router->get('/comandas/{id}/bill/', function ($id) {
     if(!isset($_SESSION['user'])){
         redirect('/login');
     }
@@ -93,6 +97,10 @@ $router->get('/produtos', function () {
         redirect('/login');
     }
     return ProductsController::showIndexPage();
+});
+
+$router->get('/produtos', function () {
+    return ProductsController::filterIndex();
 });
 
 $router->get('/produtos/create', function () {

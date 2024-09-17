@@ -22,7 +22,7 @@
                 transform: scale(3, 3);
             }
 
-            .icons{
+            .icon-trash{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -34,6 +34,28 @@
                 height: 30px;
                 
                 .border-boll-trash{
+                    display: flex;
+                    flex-direction: row;
+                    border: 1px solid black;
+                    padding: 5px;
+                    border-radius: 50px;
+                }
+            }
+
+            .icon-paid{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                right: 50px;
+                bottom: 10px;
+                width: 30px;
+                height: 30px;
+                
+                .border-boll-paid{
+                    display: flex;
+                    flex-direction: row;
                     border: 1px solid black;
                     padding: 5px;
                     border-radius: 50px;

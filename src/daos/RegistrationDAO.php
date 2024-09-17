@@ -28,7 +28,15 @@ class RegistrationDAO{
     public function findAll(): Array{
         
         //Executa a busca no banco
-        $query = "SELECT * FROM attribute_options";
+        $query = "SELECT attribute_options.id as id,
+                        attributes.name as type_id,
+                        attribute_options.name as name,
+                        attribute_options.created_at as created_at,
+                        attribute_options.updated_at as updated_at
+                    FROM attribute_options,
+                        attributes
+                    WHERE attribute_options.type_id = attributes.id
+                    ORDER BY type_id ASC";
         $results = DB::execute_query($query);
 
         //Se não encontrou nenhum registro com o id informado, volta null
@@ -82,6 +90,7 @@ class RegistrationDAO{
         $registration->name = $row['name'];
         $registration->created_at = $row['created_at'];
         $registration->updated_at = $row['updated_at'];
+        $registration->name_product = $row['name_product'];
 
         //Retorna o objeto do tipo registro com os dados populados
         return $registration;

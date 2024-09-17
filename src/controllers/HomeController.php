@@ -5,7 +5,7 @@ class HomeController{
     //renderiza a pagina home
     static function showHomePage(){
         
-        $client = unserialize($_SESSION['user']);
+        $client = Auth::user();
 
         $name = $client->name;
 

@@ -10,6 +10,7 @@ return array(
     'AttributeDAO' => $baseDir . '/src/daos/AttributeDAO.php',
     'AttributeOption' => $baseDir . '/src/models/AttributeOption.php',
     'AttributeOptionDAO' => $baseDir . '/src/daos/AttributeOptionDAO.php',
+    'Auth' => $baseDir . '/src/services/Auth.php',
     'Client' => $baseDir . '/src/models/Client.php',
     'ClientController' => $baseDir . '/src/controllers/ClientController.php',
     'ClientDAO' => $baseDir . '/src/daos/ClientDAO.php',
@@ -28,4 +29,6 @@ return array(
     'Registration' => $baseDir . '/src/models/Registration.php',
     'RegistrationController' => $baseDir . '/src/controllers/RegistrationController.php',
     'RegistrationDAO' => $baseDir . '/src/daos/RegistrationDAO.php',
+    'Sale' => $baseDir . '/src/models/Sale.php',
+    'SaleDAO' => $baseDir . '/src/daos/SaleDAO.php',
 );

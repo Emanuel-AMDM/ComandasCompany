@@ -21,11 +21,24 @@
                             <h2><?= $comanda->number ?></h2>
                         </a>
 
-                        <div class="icons">
-                            <div class="border-boll-trash">
-                                <a href="<?= url("/comandas/$comanda->id/delete") ?>"><i class="fa-solid fa-trash" style="color:red;"></i></a>
+                        <?php if($comanda->status == 0): ?>
+                            <div class="icon-trash">
+                                <div class="border-boll-trash">
+                                    <a href="<?= url("/comandas/$comanda->id/delete") ?>"><i class="fa-solid fa-trash" style="color:red;"></i></a>
+                                </div>
                             </div>
-                        </div>
+                        <?php elseif($comanda->status == 1): ?>
+                            <div class="icon-paid">
+                                <div class="border-boll-paid">
+                                    <i class="fa-solid fa-check" style="color:green;"></i>
+                                </div>
+                            </div>
+                            <div class="icon-trash">
+                                <div class="border-boll-trash">
+                                    <a href="<?= url("/comandas/$comanda->id/delete") ?>"><i class="fa-solid fa-trash" style="color:red;"></i></a>
+                                </div>
+                            </div>
+                        <?php endif ?>
                     </div>
                 <?php endforeach; ?>
             </div>

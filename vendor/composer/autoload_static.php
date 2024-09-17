@@ -27,6 +27,7 @@ class ComposerStaticInit722216232bb439e3e8f18604b1ed9dc9
         'AttributeDAO' => __DIR__ . '/../..' . '/src/daos/AttributeDAO.php',
         'AttributeOption' => __DIR__ . '/../..' . '/src/models/AttributeOption.php',
         'AttributeOptionDAO' => __DIR__ . '/../..' . '/src/daos/AttributeOptionDAO.php',
+        'Auth' => __DIR__ . '/../..' . '/src/services/Auth.php',
         'Client' => __DIR__ . '/../..' . '/src/models/Client.php',
         'ClientController' => __DIR__ . '/../..' . '/src/controllers/ClientController.php',
         'ClientDAO' => __DIR__ . '/../..' . '/src/daos/ClientDAO.php',
@@ -45,6 +46,8 @@ class ComposerStaticInit722216232bb439e3e8f18604b1ed9dc9
         'Registration' => __DIR__ . '/../..' . '/src/models/Registration.php',
         'RegistrationController' => __DIR__ . '/../..' . '/src/controllers/RegistrationController.php',
         'RegistrationDAO' => __DIR__ . '/../..' . '/src/daos/RegistrationDAO.php',
+        'Sale' => __DIR__ . '/../..' . '/src/models/Sale.php',
+        'SaleDAO' => __DIR__ . '/../..' . '/src/daos/SaleDAO.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

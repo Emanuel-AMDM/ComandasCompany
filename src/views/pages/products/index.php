@@ -13,6 +13,17 @@
                 <a href="<?= url('/produtos/create') ?>"><strong>Cadastrar</strong></a>
             </div>
 
+            <!-- Campo de busca -->
+            <form action="" method="get"></form>
+                <div>
+                    <div>
+                        <label for="busca">Filtro</label>
+                        <input type="text" name="busca" id="busca">
+                    </div>
+                    <button type="submit">Filtrar</button>
+                </div>
+            </form>
+
             <div class="table-products">
                 <table>
                     <thead>

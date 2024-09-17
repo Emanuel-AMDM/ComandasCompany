@@ -7,7 +7,6 @@ class ClientController{
     }
     
     static function login(){
-        session_start();
         //cria a instancia clientDAO
         $clientDAO = new ClientDAO();
         
@@ -21,13 +20,13 @@ class ClientController{
             return redirect('/login');
         }
 
-        $_SESSION['user'] = serialize($client);
+        Auth::login($client);
 
         redirect('/');
     }
 
     static function logout(){
-        session_destroy();
+        Auth::logout();
 
         redirect('/login');
     }

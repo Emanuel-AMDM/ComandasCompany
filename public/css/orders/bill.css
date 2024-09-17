@@ -1,6 +1,7 @@
 @import url('../themes/buttons.css');
 @import url('../themes/input.css');
 @import url('../themes/table.css');
+@import url('../themes/modal.css');
 
 .contents{
     padding: 30px 70px;

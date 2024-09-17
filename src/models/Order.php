@@ -11,6 +11,9 @@ class Order{
     //ID do estabelecimento que a comanda pertence
     public $client_id;
 
+    //Status da comanda
+    public $status;
+
     //Data que o registro foi criado
     public $created_at;
 

@@ -1,5 +1,5 @@
 <?php
-    $client = unserialize($_SESSION['user']);
+    $client = Auth::user();
 ?>
 
 <link rel="stylesheet" href="<?= public_url('/css/side-bar.css') ?>">

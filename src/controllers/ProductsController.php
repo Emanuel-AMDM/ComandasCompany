@@ -122,4 +122,9 @@ class ProductsController{
         //Redirect
         redirect('/produtos');
     }
+
+    static function filterIndex(){
+
+        $search = filter_input(INPUT_GET, 'busca', FILTER_SANITIZE_ST);
+    }
 }

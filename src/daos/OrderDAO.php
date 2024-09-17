@@ -24,6 +24,7 @@ class OrderDAO{
             $order->id = $row['id'];
             $order->number = $row['number'];
             $order->client_id = $row['client_id'];
+            $order->status = $row['status'];
             $order->created_at = $row['created_at'];
             $order->updated_at = $row['updated_at'];
 
