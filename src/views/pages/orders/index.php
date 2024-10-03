@@ -13,6 +13,22 @@
                 <a href="<?= url('/comandas/create') ?>"><strong>Criar Comanda</strong></a>
             </div>
 
+            <!-- Campo de busca -->
+            <form action="<?= url('/comandas') ?>" method="get">
+                <div class="filter">
+                    <div class="input-text">
+                        <label for="filter">Filtro</label>
+                        <input type="text" name="filter">
+                    </div>
+                    <div class="button-filter">
+                        <button type="submit">Filtrar</button>
+                    </div>
+                    <div class="button-clean">
+                        <a href="<?= url('/comandas') ?>">Limpar</a>
+                    </div>
+                </div>
+            </form>
+
             <div class="orders">
                 <?php foreach ($comandas as $comanda): ?>
                     <div class="border">

@@ -25,8 +25,7 @@ class RegistrationDAO{
     }
 
     //Traz todos os atributos cadastrados no banco de dados
-    public function findAll(): Array{
-        
+    public function findAll(string $filter = null): Array{
         //Executa a busca no banco
         $query = "SELECT attribute_options.id as id,
                         attributes.name as type_id,
@@ -35,8 +34,14 @@ class RegistrationDAO{
                         attribute_options.updated_at as updated_at
                     FROM attribute_options,
                         attributes
-                    WHERE attribute_options.type_id = attributes.id
-                    ORDER BY type_id ASC";
+                    WHERE attribute_options.type_id = attributes.id";
+        
+        if($filter){
+            $query .= " AND attributes.name like '%$filter%' OR attribute_options.name like '%$filter%'";
+        }
+
+        $query .= " ORDER BY type_id ASC"; 
+
         $results = DB::execute_query($query);
 
         //Se não encontrou nenhum registro com o id informado, volta null

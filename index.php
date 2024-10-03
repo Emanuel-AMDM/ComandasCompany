@@ -30,7 +30,7 @@ $router->post('/register', function () {
 
 // home
 $router->get('/', function () {
-    if(!isset($_SESSION['user'])){
+    if(!Auth::user()){
         redirect('/login');
     }
     return HomeController::showHomePage();
@@ -38,14 +38,14 @@ $router->get('/', function () {
 
 // comands
 $router->get('/comandas', function () {
-    if(!isset($_SESSION['user'])){
+    if(!Auth::user()){
         redirect('/login');
     }
     return OrdersController::showIndexPage();
 });
 
 $router->get('/comandas/create', function () {
-    if(!isset($_SESSION['user'])){
+    if(!Auth::user()){
         redirect('/login');
     }
     return OrdersController::showCreatePage();
@@ -56,21 +56,21 @@ $router->post('/comandas/create', function () {
 });
 
 $router->get('/comandas/{id}/edit', function ($id) {
-    if(!isset($_SESSION['user'])){
+    if(!Auth::user()){
         redirect('/login');
     }
     return OrdersController::showEditPage($id);
 });
 
 $router->get('/comandas/{id}/delete', function ($id) {
-    if(!isset($_SESSION['user'])){
+    if(!Auth::user()){
         redirect('/login');
     }
     return OrdersController::deleteOrder($id);
 });
 
 $router->get('/item/{id}/delete', function ($id) {
-    if(!isset($_SESSION['user'])){
+    if(!Auth::user()){
         redirect('/login');
     }
     return OrderItemController::deleteOrderItem($id);
@@ -85,7 +85,7 @@ $router->post('/comandas/bill/paid', function () {
 });
 
 $router->get('/comandas/{id}/bill/', function ($id) {
-    if(!isset($_SESSION['user'])){
+    if(!Auth::user()){
         redirect('/login');
     }
     return OrdersController::showBillPage($id);
@@ -93,18 +93,14 @@ $router->get('/comandas/{id}/bill/', function ($id) {
 
 // products
 $router->get('/produtos', function () {
-    if(!isset($_SESSION['user'])){
+    if(!Auth::user()){
         redirect('/login');
     }
     return ProductsController::showIndexPage();
 });
 
-$router->get('/produtos', function () {
-    return ProductsController::filterIndex();
-});
-
 $router->get('/produtos/create', function () {
-    if(!isset($_SESSION['user'])){
+    if(!Auth::user()){
         redirect('/login');
     }
     return ProductsController::showCreatePage();
@@ -115,7 +111,7 @@ $router->post('/produtos/create', function () {
 });
 
 $router->get('/produtos/{id}/edit', function ($id) {
-    if(!isset($_SESSION['user'])){
+    if(!Auth::user()){
         redirect('/login');
     }
     return ProductsController::showEditPage($id);
@@ -126,7 +122,7 @@ $router->post('/produtos/{id}/edit', function ($id) {
 });
 
 $router->get('/produtos/{id}/delete', function ($id) {
-    if(!isset($_SESSION['user'])){
+    if(!Auth::user()){
         redirect('/login');
     }
     return ProductsController::deleteProduct($id);
@@ -135,14 +131,14 @@ $router->get('/produtos/{id}/delete', function ($id) {
 // pre-cadastro
 // brand
 $router->get('/pre-cadastro', function () {
-    if(!isset($_SESSION['user'])){
+    if(!Auth::user()){
         redirect('/login');
     }
     return RegistrationController::showIndexPage();
 });
 
 $router->get('/pre-cadastro/create', function () {
-    if(!isset($_SESSION['user'])){
+    if(!Auth::user()){
         redirect('/login');
     }
     return RegistrationController::showCreatePage();
@@ -153,7 +149,7 @@ $router->post('/pre-cadastro/create', function () {
 });
 
 $router->get('/pre-cadastro/{id}/edit', function ($id) {
-    if(!isset($_SESSION['user'])){
+    if(!Auth::user()){
         redirect('/login');
     }
     return RegistrationController::showEditPage($id);
@@ -164,7 +160,7 @@ $router->post('/pre-cadastro/{id}/edit', function ($id) {
 });
 
 $router->get('/pre-cadastro/{id}/delete', function ($id) {
-    if(!isset($_SESSION['user'])){
+    if(!Auth::user()){
         redirect('/login');
     }
     return RegistrationController::deleteRegistration($id);

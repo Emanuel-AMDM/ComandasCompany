@@ -60,6 +60,32 @@
     }
 }
 
+.button-filter{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+    button{
+        height: 35px;
+        width: 100px;
+        border-radius: 5px;
+    }
+}
+
+.button-clean{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    a{
+        border: 1px solid black;
+        padding: 6% 8px;
+        text-decoration: none;
+        border-radius: 5px;
+        color: black;
+    }
+}
+
 .button-save-registration{
     display: flex;
     justify-content: flex-end;

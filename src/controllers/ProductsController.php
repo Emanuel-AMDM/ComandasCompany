@@ -3,14 +3,28 @@
 class ProductsController{
     //renderiza a pagina
     static function showIndexPage(){
+
+        //recebe a pagina da tabela
+        $page = isset($_GET['page']) ? $_GET['page'] : 1;
+
+        //calcula o value dos botões
+        $page_proximo = $page + 1;
+        $page_anterior = ($page != 1 ? $page : 2) - 1;
+        
+        //recebe o filtro da pagina
+        $filter = isset($_GET['filter']) ? $_GET['filter'] : null;
         
         //cria o objeto ProductDAO
         $productDAO = new ProductDAO();
         //chama a function findAll
-        $produtos = $productDAO->findAll();
+        $produtos = $productDAO->findAll($filter, $page);
 
         return view('pages/products/index.php',[
-            'produtos' => $produtos
+            'produtos' => $produtos['records'],
+            'page' => $page,
+            'page_proximo' => $page_proximo,
+            'page_anterior' => $page_anterior,
+            'total_page' => $produtos['total_page']
         ]);
     }
 
@@ -121,10 +135,5 @@ class ProductsController{
 
         //Redirect
         redirect('/produtos');
-    }
-
-    static function filterIndex(){
-
-        $search = filter_input(INPUT_GET, 'busca', FILTER_SANITIZE_ST);
     }
 }

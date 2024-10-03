@@ -4,10 +4,13 @@ class RegistrationController{
     //renderiza a pagina
     static function showIndexPage(){
 
+        //pega o filter da pagina
+        $filter = isset($_GET['filter']) ? $_GET['filter'] : null;
+
         //cria o objeto resgistrationDAO
         $registrationDAO = new RegistrationDAO();
         //traz a function findAll
-        $registros = $registrationDAO->findAll();
+        $registros = $registrationDAO->findAll($filter);
 
         return view('pages/pre-registration/index.php', [
             'registros' => $registros

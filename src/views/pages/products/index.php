@@ -14,13 +14,18 @@
             </div>
 
             <!-- Campo de busca -->
-            <form action="" method="get"></form>
-                <div>
-                    <div>
-                        <label for="busca">Filtro</label>
-                        <input type="text" name="busca" id="busca">
+            <form action="<?= url('/produtos') ?>" method="get">
+                <div class="filter">
+                    <div class="input-text">
+                        <label for="filter">Filtro</label>
+                        <input type="text" name="filter">
                     </div>
-                    <button type="submit">Filtrar</button>
+                    <div class="button-filter">
+                        <button type="submit">Filtrar</button>
+                    </div>
+                    <div class="button-clean">
+                        <a href="<?= url('/produtos') ?>">Limpar</a>
+                    </div>
                 </div>
             </form>
 
@@ -47,6 +52,22 @@
                     </tbody>
                 </table>
             </div>
+
+            <form action="<?= url('/produtos') ?>" method="get">
+                <div>
+                    <?php if($page > 1): ?>
+                        <button type="submit" name="page" value="<?= $page_anterior ?>">Anterior</button>
+                    <?php endif; ?>
+                    
+                    <div>
+                        <?= $page . ' de ' . $total_page ?>
+                    </div>
+                    
+                    <?php if($page < $total_page): ?>
+                        <button type="submit" name="page" value="<?= $page_proximo ?>">Proximo</button>
+                    <?php endif; ?>
+                </div>
+            </form>
 
         </div>
     </div>

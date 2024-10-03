@@ -13,6 +13,22 @@
                 <a href="<?= url('/pre-cadastro/create') ?>"><strong>Cadastrar</strong></a>
             </div>
 
+            <!-- Campo de busca -->
+            <form action="<?= url('/pre-cadastro') ?>" method="get">
+                <div class="filter">
+                    <div class="input-text">
+                        <label for="filter">Filtro</label>
+                        <input type="text" name="filter">
+                    </div>
+                    <div class="button-filter">
+                        <button type="submit">Filtrar</button>
+                    </div>
+                    <div class="button-clean">
+                        <a href="<?= url('/pre-cadastro') ?>">Limpar</a>
+                    </div>
+                </div>
+            </form>
+
             <div class="table-products">
                 <table>
                     <thead>

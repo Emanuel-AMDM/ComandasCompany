@@ -3,15 +3,45 @@
 class ProductDAO {
 
     //Obtem todos os produtos via banco de dados
-    public function FindAll(): Array{
+    public function findAll(string $filter = null, string $page): Array{
+
+        //Executa a query da quantidade de registros no banco
+        $queryCount = "SELECT COUNT(id) as total FROM products";
+
+        if($filter){ //isso é o mesmo disso ($filter != null)
+            $queryCount .= " WHERE name like '%$filter%' OR price like '%$filter%'";
+        }
+        
+        $resultCount = DB::execute_query($queryCount);
+        
+        $limit = 2;
+        //ceil arredonda pra cima
+        $total_page = ceil($resultCount[0]['total'] / $limit);
+        if($page > $total_page){
+            return [
+                'total_page' => $total_page,
+                'records' => []
+            ];
+        }
+        $offset = ($limit * ($page - 1));
 
         //Executa a query do banco de dados
         $query = "SELECT * FROM products";
+
+        if($filter){ //isso é o mesmo disso ($filter != null)
+            $query .= " WHERE name like '%$filter%' OR price like '%$filter%'";
+        }
+
+        $query .= "  ORDER BY id ASC LIMIT $limit OFFSET $offset";
+
         $result = DB::execute_query($query);
 
         //Se não encontrou nenhum resultado, volta null
         if(count($result) === 0){
-            return[];
+            return [
+                'total_page' => $total_page,
+                'records' => []
+            ];
         }
 
         //Array de resposta
@@ -33,7 +63,10 @@ class ProductDAO {
         }
 
         //Retorna a lista com todos os registros encontrados no banco
-        return $records;
+        return [
+            'total_page' => $total_page,
+            'records' => $records
+        ];
     }
 
     //Cria um novo registro de pedido no banco de dados

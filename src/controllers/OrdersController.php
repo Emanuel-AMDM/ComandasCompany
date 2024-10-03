@@ -3,10 +3,14 @@
 class OrdersController{
     //renderiza a pagina
     static function showIndexPage(){
+
+        //recebe o filter da pagina
+        $filter = isset($_GET['filter']) ? $_GET['filter'] : null; 
+
         //cria a instancia
         $orderDAO = new OrderDAO();
         //traz a function findAll
-        $comandas = $orderDAO->findAll();
+        $comandas = $orderDAO->findAll($filter);
 
         return view('pages/orders/index.php', [
             'comandas' => $comandas //passa a variavel com as info do findAll para a pagina

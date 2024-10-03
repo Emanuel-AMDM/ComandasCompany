@@ -3,9 +3,15 @@
 class OrderDAO{
 
     //Obtem todas as comandas do banco de dados
-    public function findAll(): Array{
+    public function findAll(string $filter = null): Array{
+        
         //Executa a busca no banco
         $query = "SELECT * FROM cards";
+
+        if($filter){
+            $query .= " WHERE number like '%$filter%'"; 
+        }
+
         $result = DB::execute_query($query);
 
         //Se não encontrou nenhum registro com o id informado, volta null
