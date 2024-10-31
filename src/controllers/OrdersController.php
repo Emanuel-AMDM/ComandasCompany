@@ -70,7 +70,7 @@ class OrdersController{
         //cria o objeto ProductDAO
         $ProductDAO = new ProductDAO();
         //traz a function findall
-        $produto = $ProductDAO->findAll();
+        $produto = $ProductDAO->findAllComand();
 
         return view('pages/orders/edit.php',[
             'comanda' => $comanda,

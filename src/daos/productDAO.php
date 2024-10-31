@@ -69,6 +69,43 @@ class ProductDAO {
         ];
     }
 
+    //Obtem todos os produtos via banco de dados
+    public function findAllComand(): Array{
+
+        //Executa a query do banco de dados
+        $query = "SELECT * FROM products";
+
+        $query .= "  ORDER BY id ASC";
+
+        $result = DB::execute_query($query);
+
+        //Se não encontrou nenhum resultado, volta null
+        if(count($result) === 0){
+            return [];
+        }
+
+        //Array de resposta
+        $records = [];
+
+        foreach($result as $row){
+            //Cria um objeto Product
+            $product = new Product();
+
+            //Popular o objeto order os dados que vieram do banco de dados
+            $product->id = $row['id'];
+            $product->name = $row['name'];
+            $product->price = $row['price'];
+            $product->created_at = $row['created_at'];
+            $product->updated_at = $row['updated_at'];
+
+            //Retorna o objeto tipo produto com os dados populados
+            $records[] = $product;
+        }
+
+        //Retorna a lista com todos os registros encontrados no banco
+        return $records;
+    }
+
     //Cria um novo registro de pedido no banco de dados
     public function create(Product $product){
 

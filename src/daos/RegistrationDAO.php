@@ -25,7 +25,33 @@ class RegistrationDAO{
     }
 
     //Traz todos os atributos cadastrados no banco de dados
-    public function findAll(string $filter = null): Array{
+    public function findAll(string $filter = null, string $page): Array{
+
+        //Executa um count para saber quantos registros tenho na consulta
+        $queryCount = "SELECT COUNT(attribute_options.id) as total
+                    FROM attribute_options,
+                        attributes
+                    WHERE attribute_options.type_id = attributes.id";
+
+        if($filter){
+            $query .= " AND attributes.name like '%$filter%' OR attribute_options.name like '%$filter%'";
+        }
+
+        $resultCount = DB::execute_query($queryCount);
+
+        $limit = 2;
+
+        //ceil arredonda pra cima
+        $total_page = ceil($resultCount[0]['total'] / $limit);
+        if($page > $total_page){
+            return [
+                'total_page' => $total_page,
+                'records' => []
+            ];
+        }
+
+        $offset = ($limit * ($page - 1));
+
         //Executa a busca no banco
         $query = "SELECT attribute_options.id as id,
                         attributes.name as type_id,
@@ -40,13 +66,16 @@ class RegistrationDAO{
             $query .= " AND attributes.name like '%$filter%' OR attribute_options.name like '%$filter%'";
         }
 
-        $query .= " ORDER BY type_id ASC"; 
+        $query .= " ORDER BY type_id ASC LIMIT $limit OFFSET $offset"; 
 
         $results = DB::execute_query($query);
 
         //Se não encontrou nenhum registro com o id informado, volta null
         if(count($results) === 0){
-            return null;
+            return [
+                'total_page' => $total_page,
+                'records' => []
+            ];
         }
 
         //Array de resposta
@@ -68,7 +97,10 @@ class RegistrationDAO{
         }
 
         //Retorna a lista com todos os registros encontrados no banco
-        return $records;
+        return [
+            'total_page' => $total_page,
+            'records' => $records
+        ];
     }
 
     //Obtem um pedido pelo ID o banco de dados
@@ -95,7 +127,6 @@ class RegistrationDAO{
         $registration->name = $row['name'];
         $registration->created_at = $row['created_at'];
         $registration->updated_at = $row['updated_at'];
-        $registration->name_product = $row['name_product'];
 
         //Retorna o objeto do tipo registro com os dados populados
         return $registration;

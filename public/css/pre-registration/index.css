@@ -2,6 +2,7 @@
 @import url('../themes/table.css');
 @import url('../themes/filter.css');
 @import url('../themes/input.css');
+@import url('../themes/pagination.css');
 
 .contents{
     padding: 30px 70px;

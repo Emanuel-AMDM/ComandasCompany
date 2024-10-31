@@ -1,0 +1,16 @@
+.pagination{
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    
+    button{
+        background: none;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+
+        i{
+            color: red;
+        }
+    }
+}

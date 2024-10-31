@@ -49,25 +49,30 @@
                                 </td>
                             </tr>
                         <?php endforeach; ?>
+                        <tr>
+                            <td colspan="3">
+                                <form action="<?= url('/produtos') ?>" method="get">
+                                    <div class="pagination">
+                                        <?php if($page > 1): ?>
+                                            <button type="submit" name="page" value="<?= $page_anterior ?>"><i class="fa-solid fa-chevron-left"></i></button>
+                                        <?php endif; ?>
+                                        
+                                        <div>
+                                            <?= $page . ' de ' . $total_page ?>
+                                        </div>
+                                        
+                                        <?php if($page < $total_page): ?>
+                                            <button type="submit" name="page" value="<?= $page_proximo ?>"><i class="fa-solid fa-chevron-right"></i></button>
+                                        <?php endif; ?>
+                                    </div>
+                                </form>
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
 
-            <form action="<?= url('/produtos') ?>" method="get">
-                <div>
-                    <?php if($page > 1): ?>
-                        <button type="submit" name="page" value="<?= $page_anterior ?>">Anterior</button>
-                    <?php endif; ?>
-                    
-                    <div>
-                        <?= $page . ' de ' . $total_page ?>
-                    </div>
-                    
-                    <?php if($page < $total_page): ?>
-                        <button type="submit" name="page" value="<?= $page_proximo ?>">Proximo</button>
-                    <?php endif; ?>
-                </div>
-            </form>
+            
 
         </div>
     </div>

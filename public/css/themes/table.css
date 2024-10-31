@@ -47,6 +47,11 @@
         padding: 15px 73px;
         border-bottom: 1px solid #ddd;
     }
+    tr:last-child{
+        td{
+           border-bottom: none; 
+        }
+    }
     /* após uma linha muda a cor da proxima */
     tr:nth-child(even){
         background-color: #f2f2f2;
